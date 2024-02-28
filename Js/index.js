@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     const appContainer = document.getElementById("webDuolingo");//Esta es el elemento padre del div webDuolingo
   
     const h1 = document.createElement("h1");//Crea un nuevo elemento h1
-    h1.textContent = "Lista de Tareas";//Establece el contenido del elemento h1 como "Lista de Tareas"
+    h1.textContent = "¡La forma divertida, efectiva y gratis de aprender un idioma!";//Establece el contenido del elemento h1 como "Lista de Tareas"
     appContainer.appendChild(h1);//Agrega el elemento h1 al elemento webDuolingo
     const webDuolingo = document.getElementById("webDuolingo");/*Selecciona el elemento webDuolingo del documento HTML para 
     poder utilizarlo como contenedor principal para agregar otros elementos dinámicamente con JavaScript*/
