@@ -8,15 +8,25 @@ body {
     background-color: #ffffff;
 }
 
-#webDuolingo {
-    width: 70%;
-    height: 70%;
-    max-width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
 h1 {
     color:rgb(0,0,0,0.7); 
     text-align: center;
+}
+
+#containerHome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+#containerHome h1 {
+    margin: 0;
+}
+  
+.btn-container {
+    display: flex;
+}
+  
+.btn-container button {
+    margin-left: 10px;
 }
