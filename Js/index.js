@@ -30,8 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     div.textContent = "HOLA MUNDO 1";//Generea el texto que contendra el div
     appContainer.prepend(div);//Carga el div antes del primer hijo de appContainer
 
-    /*Texto prueba 2*/
-    const div2 = document.createElement("div");
-    div2.textContent = "HOLA MUNDO 2";//Genera el texto del div
-    appContainer.append(div2);//carga el div despues del primer hijo de appContainer
+    /*Se crea el primer botón*/
+    const btn1 = document.createElement("button");
+    btn1.textContent = "EMPIEZA AHORA";//Genera el texto del div
+    appContainer.append(btn1);//carga el div despues del primer hijo de 
+    
+    /*Se crea el primer botón*/
+    const btn2 = document.createElement("button");
+    btn2.textContent = "Ya TENGO UNA CUENTA";//Genera el texto del div
+    appContainer.append(btn2);//carga el div despues del primer hijo de appContainer
 });
