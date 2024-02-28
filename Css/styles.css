@@ -15,18 +15,32 @@ h1 {
 
 #containerHome {
     display: flex;
+    flex-direction: column; /* Cambiado a disposición de columnas */
     align-items: center;
-    justify-content: space-between;
-}
+  }
   
-#containerHome h1 {
-    margin: 0;
-}
-  
-.btn-container {
+  .btn-container {
     display: flex;
-}
+    margin-top: 20px; /* Espacio entre el h1 y los botones */
+  }
   
-.btn-container button {
-    margin-left: 10px;
+  .btn-container button {
+    margin: 0 10px; /* Ajuste de los márgenes de los botones */
+  }
+
+.img-container {
+    float: left;
+    justify-content: end;
+    padding: 48px;
+    width: 998px;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.left-image {
+    flex: initial;
+    margin-right: 100px;
+    max-width: 100%; /* Para asegurar que la imagen no sobresalga del contenedor */
 }

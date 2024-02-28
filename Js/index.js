@@ -27,30 +27,38 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     //FIN de ---> etiqueta </div> del elemento headDuolingo del documento HTML
 
     //Inicio de la etiqueta <div> del elemento containerHome del documento HTML
-        const containerHome = document.getElementById("containerHome");//Esta es el elemento padre del div containerHome
-        const h1 = document.createElement("h1");//Crea un nuevo elemento h1
-        h1.textContent = "¡La forma divertida, efectiva y gratis de aprender un idioma!";//Establece el contenido del elemento h1 como "¡La forma divertida,..."
-        containerHome.appendChild(h1);//Agrega el elemento h1 al elemento containerHome
-
-        /*Se añade la imagen de la parte izquierda*/
-        const imgContent = document.createElement('img');
-        imgContent.src = "../images/Duo1.gif";
-        containerHome.insertBefore(imgContent, h1);
-
-        /*Se crea el primer botón*/
-        const btn1 = document.createElement("button");
-        btn1.textContent = "EMPIEZA AHORA";//Genera el texto del div
-        containerHome.append(btn1);//carga el div despues del primer hijo de 
-        /*Se crea el Segundo botón*/
-        const btn2 = document.createElement("button");
-        btn2.textContent = "YA TENGO UNA CUENTA";//Genera el texto del div
-        containerHome.append(btn2);//carga el div despues del primer hijo de containerHome
-
-        // Agrega los botones antes del final del contenedor containerHome
-        const btnContainer = document.createElement("div");
-        btnContainer.classList.add("btn-container");
-        containerHome.appendChild(btnContainer);
-        btnContainer.appendChild(btn1);
-        btnContainer.appendChild(btn2);
+    const containerHome = document.getElementById("containerHome");//Esta es el elemento padre del div containerHome
+    const imgContent = document.createElement('img');
+    imgContent.src = "../images/Duo1.gif";
+    imgContent.classList.add("left-image");
+    
+    const imgcontainer = document.createElement("div");
+    imgcontainer.classList.add("img-container");
+    imgcontainer.appendChild(imgContent);
+    
+    const h1container = document.createElement("div");
+    h1container.classList.add("container-left");
+    
+    const h1 = document.createElement("h1");
+    h1.textContent = "¡La forma divertida, efectiva y gratis de aprender un idioma!";
+    
+    const btnContainer = document.createElement("div");
+    btnContainer.classList.add("btn-container");
+    
+    const btn1 = document.createElement("button");
+    btn1.textContent = "EMPIEZA AHORA";
+    
+    const btn2 = document.createElement("button");
+    btn2.textContent = "YA TENGO UNA CUENTA";
+    
+    // Se llama a las variables en el orden deseado
+    containerHome.appendChild(imgcontainer);
+    
+    h1container.appendChild(h1);
+    h1container.appendChild(btnContainer);
+    btnContainer.appendChild(btn1);
+    btnContainer.appendChild(btn2);
+    
+    containerHome.appendChild(h1container);
     //FIN de ---> etiqueta </div> del elemento containerHome del documento HTML
 });
