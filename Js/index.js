@@ -37,6 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     
     /*Se crea el primer botón*/
     const btn2 = document.createElement("button");
-    btn2.textContent = "Ya TENGO UNA CUENTA";//Genera el texto del div
+    btn2.textContent = "YA TENGO UNA CUENTA";//Genera el texto del div
     appContainer.append(btn2);//carga el div despues del primer hijo de appContainer
 });
