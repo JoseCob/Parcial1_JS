@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     div.textContent = "HOLA MUNDO 1";//Generea el texto que contendra el div
     appContainer.prepend(div);//Carga el div antes del primer hijo de appContainer
 
+    /*Se añade la imagen*/
+
     /*Se crea el primer botón*/
     const btn1 = document.createElement("button");
     btn1.textContent = "EMPIEZA AHORA";//Genera el texto del div
