@@ -17,11 +17,21 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     headFavicon.appendChild(linkFavicon);//Agrega el elemento link al elemento head
 
     // Selecciona el elemento webDuolingo del documento HTML
-    const appContainer = document.getElementById("webDuolingo");
+    const appContainer = document.getElementById("webDuolingo");//Esta es el elemento padre del div webDuolingo
   
     const h1 = document.createElement("h1");//Crea un nuevo elemento h1
     h1.textContent = "Lista de Tareas";//Establece el contenido del elemento h1 como "Lista de Tareas"
     appContainer.appendChild(h1);//Agrega el elemento h1 al elemento webDuolingo
     const webDuolingo = document.getElementById("webDuolingo");/*Selecciona el elemento webDuolingo del documento HTML para 
     poder utilizarlo como contenedor principal para agregar otros elementos dinámicamente con JavaScript*/
+
+    /*Texto de prueba con el DOM*/
+    const  div = document.createElement("div");//Crea un elemento div
+    div.textContent = "HOLA MUNDO 1";//Generea el texto que contendra el div
+    appContainer.prepend(div);//Carga el div antes del primer hijo de appContainer
+
+    /*Texto prueba 2*/
+    const div2 = document.createElement("div");
+    div2.textContent = "HOLA MUNDO 2";//Genera el texto del div
+    appContainer.append(div2);//carga el div despues del primer hijo de appContainer
 });
