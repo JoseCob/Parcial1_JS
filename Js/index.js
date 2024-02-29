@@ -32,4 +32,16 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
             <a href="#" class="text-noSelect">IDIOMA DE LA PÁGINA: ESPAÑOL&nbsp;<i class="fa fa-angle-down"></i></a>
         </div>
     </div>`;
+
+    //se crea el div del id="headDuolingo">
+    const containerHome = document.getElementById('containerHome');
+    containerHome.innerHTML=`
+    <div class="container">
+        <div class="containerImg text-noSelect"><img src="../images/Duo1.gif"></div>
+        <div class="container-textCenter">
+            <h1>¡La forma divertida, efectiva y gratis de aprender un idioma!</h1>
+            <button>EMPIEZA AHORA</button>
+            <button>YA TENGO UNA CUENTRA</button>
+        </div>
+    </div>`;
 });
