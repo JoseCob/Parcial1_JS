@@ -46,16 +46,64 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  gap: 30px 30px;
+  height: 75vh;
   width: 100%;
-  margin: 10px;
   margin: 0;
-  margin-top: -120px;
+}
+.containerImg{
+  align-items: end;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  position: relative;
+  gap: 80px;
+  max-width: 80%;
+}
+.textCenter{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 110px;
 }
 
 h1 {/*Clase para el titulo de la página*/
-  color:rgb(0,0,0,0.7); 
+  color:#4B4B4B;
   text-align: center;
-  
+  line-height: 1.5;
+}
+
+.buttons{
+  display: flex;
+  line-height: normal;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 330px;
+  width: 100%;
+  margin-top: 40px;
+  border-color: transparent;
+}
+.btn1{
+  padding: 14px;/*Contenedor del botón*/
+  color: #ffffff;/*Color del texto del botón*/
+  background-color: #58CC02;/*Color de fondo del botón*/
+  border-radius: 10px;/*Genera Borde redondo*/
+  border-bottom: 4px solid #58A700; /*Propiedad de atajo para bordes inferiores */
+  border-bottom-style: 4px solid #58CC02; /*pinta el atajo para el estilo borde inferior*/
+  border-top: 2px solid #58CC02;/*Propiedad de atajo para bordes superior */
+  border-top-style: 2px #58CC02;/*pinta el atajo para el estilo borde superior*/
+  border-right: 2px solid #58CC02;/*Propiedad de atajo para bordes derecho*/
+  border-right-style: 2px #58CC02;/*pinta el atajo para el estilo borde derecho*/
+  border-left: 2px #58CC02;/*Propiedad de atajo para bordes izquierdo*/
+  border-left-style: 2px #58CC02;/*pinta el atajo para el estilo borde izquierdo*/
+  font-weight: bold;/*Textto en negritas*/
+  font-size: 15px;/*Tamaño del texto*/
+}
+.btn2{
+  margin-top: -15px;
+  padding: 15px;
+  color: #1EB1F6;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border-color: #E5E5E5;
+  font-weight: bold;
 }

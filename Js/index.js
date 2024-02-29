@@ -39,11 +39,14 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     const containerHome = document.createElement('containerHome')//se crea el div con el nombre containerHome
     containerHome.innerHTML=`
     <div class="container">
-        <div class="text-noSelect"><img src="../images/Duo1.gif"></div>
-        <div class="container-textCenter">
-            <h1>¡La forma divertida, efectiva y <br>gratis de aprender un idioma!</h1>
-            <button>EMPIEZA AHORA</button><br>
-            <button>YA TENGO UNA CUENTRA</button>
+        <div class="containerImg"><img class="text-noSelect" src="../images/Duo1.gif">
+            <div class="textCenter">
+                <h1>¡La forma divertida, efectiva y <br>gratis de aprender un idioma!</h1>
+                <div class="buttons">
+                    <button class="btn1">EMPIEZA AHORA</button><br>
+                    <button class="btn2">YA TENGO UNA CUENTRA</button>
+                </div>
+            </div>
         </div>
     </div>`;
     document.body.appendChild(containerHome);//Se llama el html para mostrarlo en la pagina
