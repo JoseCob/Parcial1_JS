@@ -4,6 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  height: 100vh;
 }
 .text-noSelect{/*Clase que evita que se marque un texto*/
   user-select: none;
@@ -44,8 +45,13 @@ body {
 .container{
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 30px 30px;
   width: 100%;
   margin: 10px;
+  margin: 0;
+  margin-top: -120px;
 }
 
 h1 {/*Clase para el titulo de la página*/
