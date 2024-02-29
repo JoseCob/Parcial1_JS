@@ -17,12 +17,13 @@ body {
   display: flex;
   overflow: hidden;
   background-color: #ffffff;
-  max-width: 100%;
+  max-width: 988px;
   padding: 20px 10px;
   margin-top: -20px;
+  margin: 0 auto;
 }
 
-.header a {
+.header a .logo{
   float: left;
   align-items: center;
   grid:80px;
@@ -33,9 +34,6 @@ body {
   font-size: 14.5px;
   padding: 12px;
   cursor: pointer;
-}
-.header .logo {
-  
 }
 
 .header-right {
