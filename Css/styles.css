@@ -28,6 +28,7 @@ body {
   margin-right: 250px;
   margin-top: -5.5px;
   font-family: Arial,sans-serif;
+  cursor: pointer;
 }
 .header a.logo {
   margin-left: 224px;
@@ -39,7 +40,16 @@ body {
 }
 /*Fin del menú de navegación */
 
+/*Clase del contenedor del elemento*/
+.container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+}
+
 h1 {/*Clase para el titulo de la página*/
   color:rgb(0,0,0,0.7); 
   text-align: center;
+  
 }

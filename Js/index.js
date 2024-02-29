@@ -24,24 +24,27 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     //FIN del apartado del "</head>" de nuestro HTML
 
     //se crea el div del id="headDuolingo">
-    const headDuolingo = document.getElementById('headDuolingo');
+    const headDuolingo = document.createElement('headDuolingo');
     headDuolingo.innerHTML=`
     <div class="header">
-        <a href="../Html/index.html" class="logo"><img src="../images/Duo.svg"></a></li>
+        <a href="../Html/index.html" class="logo"><img src="../images/Duo.svg"></a>
         <div class="header-right">
-            <a href="#" class="text-noSelect">IDIOMA DE LA PÁGINA: ESPAÑOL&nbsp;<i class="fa fa-angle-down"></i></a>
+            <a class="text-noSelect">IDIOMA DE LA PÁGINA: ESPAÑOL&nbsp;<i class="fa fa-angle-down"></i></a>
         </div>
     </div>`;
+    document.body.appendChild(headDuolingo);
 
-    //se crea el div del id="headDuolingo">
-    const containerHome = document.getElementById('containerHome');
+    //Se crea el contenedor del inicio de la pagina
+    //se crea el div del id="containerHome"
+    const containerHome = document.createElement('containerHome')//se crea el div con el nombre containerHome
     containerHome.innerHTML=`
     <div class="container">
-        <div class="containerImg text-noSelect"><img src="../images/Duo1.gif"></div>
+        <div class="text-noSelect"><img src="../images/Duo1.gif"></div>
         <div class="container-textCenter">
-            <h1>¡La forma divertida, efectiva y gratis de aprender un idioma!</h1>
-            <button>EMPIEZA AHORA</button>
+            <h1>¡La forma divertida, efectiva y <br>gratis de aprender un idioma!</h1>
+            <button>EMPIEZA AHORA</button><br>
             <button>YA TENGO UNA CUENTRA</button>
         </div>
     </div>`;
+    document.body.appendChild(containerHome);//Se llama el html para mostrarlo en la pagina
 });
