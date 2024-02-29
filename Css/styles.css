@@ -1,46 +1,45 @@
 body {
-    margin: 0;
-    font-family: "Arial", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #ffffff;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.text-noSelect{/*Clase que evita que se marque un texto*/
+  user-select: none;
 }
 
-h1 {
-    color:rgb(0,0,0,0.7); 
-    text-align: center;
+/*Estilo para el menú de navegación*/
+.header {
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 20px 10px;
+  margin-top: 0;
 }
 
-#containerHome {
-    display: flex;
-    flex-direction: column; /* Cambiado a disposición de columnas */
-    align-items: center;
-  }
-  
-  .btn-container {
-    display: flex;
-    margin-top: 20px; /* Espacio entre el h1 y los botones */
-  }
-  
-  .btn-container button {
-    margin: 0 10px; /* Ajuste de los márgenes de los botones */
-  }
-
-.img-container {
-    float: left;
-    justify-content: end;
-    padding: 48px;
-    width: 998px;
-    margin: 0 auto;
-    flex-direction: row;
-    align-items: center;
-    row-gap: 10px;
+.header a {
+  float: left;
+  color: rgba(22, 21, 21, 0.4);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 14.5px; 
+  font-weight:bolder;
+  margin-right: 250px;
+  margin-top: -5.5px;
+  font-family: Arial,sans-serif;
+}
+.header a.logo {
+  margin-left: 224px;
+  margin-top: -20px;
 }
 
-.left-image {
-    flex: initial;
-    margin-right: 100px;
-    max-width: 100%; /* Para asegurar que la imagen no sobresalga del contenedor */
+.header-right {
+  float: right;
+}
+/*Fin del menú de navegación */
+
+h1 {/*Clase para el titulo de la página*/
+  color:rgb(0,0,0,0.7); 
+  text-align: center;
 }

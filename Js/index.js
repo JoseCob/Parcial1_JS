@@ -23,42 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
         headFontAwesome.appendChild(linkFontAwesome);
     //FIN del apartado del "</head>" de nuestro HTML
 
-    //Inicio de la etiqueta <div> del elemento headDuolingo del documento HTML
-    //FIN de ---> etiqueta </div> del elemento headDuolingo del documento HTML
-
-    //Inicio de la etiqueta <div> del elemento containerHome del documento HTML
-    const containerHome = document.getElementById("containerHome");//Esta es el elemento padre del div containerHome
-    const imgContent = document.createElement('img');
-    imgContent.src = "../images/Duo1.gif";
-    imgContent.classList.add("left-image");
-    
-    const imgcontainer = document.createElement("div");
-    imgcontainer.classList.add("img-container");
-    imgcontainer.appendChild(imgContent);
-    
-    const h1container = document.createElement("div");
-    h1container.classList.add("container-left");
-    
-    const h1 = document.createElement("h1");
-    h1.textContent = "¡La forma divertida, efectiva y gratis de aprender un idioma!";
-    
-    const btnContainer = document.createElement("div");
-    btnContainer.classList.add("btn-container");
-    
-    const btn1 = document.createElement("button");
-    btn1.textContent = "EMPIEZA AHORA";
-    
-    const btn2 = document.createElement("button");
-    btn2.textContent = "YA TENGO UNA CUENTA";
-    
-    // Se llama a las variables en el orden deseado
-    containerHome.appendChild(imgcontainer);
-    
-    h1container.appendChild(h1);
-    h1container.appendChild(btnContainer);
-    btnContainer.appendChild(btn1);
-    btnContainer.appendChild(btn2);
-    
-    containerHome.appendChild(h1container);
-    //FIN de ---> etiqueta </div> del elemento containerHome del documento HTML
+    //se crea el div del id="headDuolingo">
+    const headDuolingo = document.getElementById('headDuolingo');
+    headDuolingo.innerHTML=`
+    <div class="header">
+        <a href="../Html/index.html" class="logo"><img src="../images/Duo.svg"></a></li>
+        <div class="header-right">
+            <a href="#" class="text-noSelect">IDIOMA DE LA PÁGINA: ESPAÑOL&nbsp;<i class="fa fa-angle-down"></i></a>
+        </div>
+    </div>`;
 });
