@@ -1,7 +1,7 @@
 {
   "name": "parcial1_js",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto relacionado a mi primer parcial de sexto semestre en la umsa",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
