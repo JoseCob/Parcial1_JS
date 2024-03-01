@@ -12,30 +12,28 @@ body {
 
 /*Estilo para el menú de navegación*/
 .header {
+  top: 0;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  display: flex;
   overflow: hidden;
   background-color: #ffffff;
   max-width: 988px;
-  padding: 20px 10px;
-  margin-top: -20px;
-  margin: 0 auto;
+  padding: 10px 10px;
+  margin: 1px auto;
+  color: rgba(22, 21, 21, 0.4);
+  font-size: 15.45px;
+  font-weight:bolder;
 }
-
 .header a .logo{
   float: left;
   align-items: center;
   grid:80px;
   text-decoration: none;
-  font-weight:bolder;
   font-family: Arial,sans-serif;
-  color: rgba(22, 21, 21, 0.4);
-  font-size: 14.5px;
   padding: 12px;
   cursor: pointer;
 }
-
 .header-right {
   float: right;
 }
@@ -48,7 +46,6 @@ body {
   align-items: center;
   height: 75vh;
   width: 100%;
-  margin: 0;
 }
 .containerImg{
   align-items: end;
@@ -64,6 +61,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-right: 110px;
+  margin: 20px;
 }
 
 h1 {/*Clase para el titulo de la página*/
