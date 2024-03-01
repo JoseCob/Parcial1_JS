@@ -15,12 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
         linkFavicon.href="https://d35aaqx5ub95lt.cloudfront.net/favicon.ico"//Establece el atributo href del elemento link con la ruta al Favicon para la página
         const headFavicon = document.querySelector('head');//Selecciona el elemento head del documento HTML
         headFavicon.appendChild(linkFavicon);//Agrega el elemento link al elemento head
-        //Se crea el enlace para Font Awesome
-        const linkFontAwesome = document.createElement('link')
-        linkFontAwesome.rel = 'stylesheet';
-        linkFontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
-        const headFontAwesome = document.querySelector('link');
-        headFontAwesome.appendChild(linkFontAwesome);
     //FIN del apartado del "</head>" de nuestro HTML
 
     //se crea el div del id="headDuolingo">
@@ -29,7 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     <div class="header">
         <a href="../Html/index.html" class="logo"><img src="../images/Duo.svg"></a>
         <div class="header-right">
-            <a class="text-noSelect">IDIOMA DE LA PÁGINA: ESPAÑOL&nbsp;<i class="fa fa-angle-down"></i></a>
+            <button class="btnHeader">
+                <span class="spanHeader">IDIOMA DE LA PÁGINA: 
+                    ESPAÑOL
+                </span>
+                    <img alt="carácter del header" class="caracterHeader" src="../images/caracterEspecial.svg">
+            </button>
         </div>
     </div>`;
     document.body.appendChild(headDuolingo);
