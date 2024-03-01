@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     const headDuolingo = document.createElement('headDuolingo');
     headDuolingo.innerHTML=`
     <div class="header">
-        <a href="../Html/index.html" class="logo"><img src="../images/Duo.svg"></a>
+        <a href="../Html/index.html" class="logo"><img src="../images/Duo.svg" style="width: 100%; height: 100%;"></a>
         <div class="header-right">
             <button class="btnHeader">
                 <span class="spanHeader">IDIOMA DE LA PÁGINA: 
