@@ -1,0 +1,48 @@
+/*Estilo para el menú de navegación*/
+.header {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: #ffffff;
+    max-width: 988px;
+    padding: 10px 10px;
+    margin: 1px auto;
+    font-weight:900;
+}
+.header a .logo{
+    float: left;
+    align-items: center;
+    grid:80px;/*Divide la página en una cuadrícula o rejilla*/
+    text-decoration: none;/*Oculta el enlace o vinculo del texto*/
+    padding: 12px;
+    cursor: pointer;
+}
+.header-right {
+    float: right;
+}
+.btnHeader{
+    align-items: center;
+    display: flex;
+    white-space: nowrap;/*Espacio en blanco dentro de un elemento*/
+    border: none;
+    cursor: pointer;/*Puntero del mouse*/
+    user-select: none;/*Evita que se marque el texto*/
+    background-color: #ffffff;
+}
+.spanHeader{
+  font-family: "Bahnschrift SemiBold";/*Tipo de letra*/
+  font-weight: bolder;/*Texto en negritas*/
+  color: rgb(70, 68, 68);
+  opacity: 0.5;/*Muestra la transparencia de fondo sobre un elemento*/
+  font-size:16px;
+  letter-spacing: -0.15px;/*Espaciado de texto*/
+  margin-top: -4.5px;/*Desplazamiento hacia abajo el texto*/
+}
+.caracterHeader{
+  height: 14px;
+  margin-left: 8px;
+  width: 14px;
+}
+/*Fin del menú de navegación */

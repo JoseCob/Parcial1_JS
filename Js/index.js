@@ -2,13 +2,20 @@
 document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la página
 
     //Se crea el apartado del "<head>" de nuestro HTML
-        //Enlaza o Añade el archivo CSS
-        const linkStyle = document.createElement('link');//Crea un nuevo elemento link para enlazar el archivo CSS
-        linkStyle.rel = 'stylesheet';//Establece el atributo rel del elemento link como "stylesheet" para indicar que se trata de un archivo de estilos
-        linkStyle.type = 'text/css';//Establece el atributo type del elemento link como "text/css" para indicar que el archivo contiene hojas de estilo en cascada
-        linkStyle.href = '../Css/styles.css';//Establece el atributo href del elemento link con la ruta al archivo CSS para la página 
-        const headCSS = document.querySelector('head');//Selecciona el elemento head del documento HTML
-        headCSS.appendChild(linkStyle);//Agrega el elemento link al elemento head
+        //Añade el archivo CSS stylesPrimal
+        const stylesPrimal = document.createElement('link');//Crea un nuevo elemento link para enlazar el archivo CSS
+        stylesPrimal.rel = 'stylesheet';//Establece el atributo rel del elemento link como "stylesheet" para indicar que se trata de un archivo de estilos
+        stylesPrimal.type = 'text/css';//Establece el atributo type del elemento link como "text/css" para indicar que el archivo contiene hojas de estilo en cascada
+        stylesPrimal.href = '../Css/stylesPrimal.css';//Establece el atributo href del elemento link con la ruta al archivo CSS para la página 
+        const headCSS1 = document.querySelector('head');//Selecciona el elemento head del documento HTML
+        headCSS1.appendChild(stylesPrimal);//Agrega el elemento link al elemento head
+        //Añade el archivo CSS navBar
+        const stylesNavBar = document.createElement('link');//Crea un nuevo elemento link para enlazar el archivo CSS
+        stylesNavBar.rel = 'stylesheet';//Establece el atributo rel del elemento link como "stylesheet" para indicar que se trata de un archivo de estilos
+        stylesNavBar.type = 'text/css';//Establece el atributo type del elemento link como "text/css" para indicar que el archivo contiene hojas de estilo en cascada
+        stylesNavBar.href = '../Css/navBar.css';//Establece el atributo href del elemento link con la ruta al archivo CSS para la página 
+        const headCSS2 = document.querySelector('head');//Selecciona el elemento head del documento HTML
+        headCSS2.appendChild(stylesNavBar);//Agrega el elemento link al elemento head
         //Se crea el favicon del sitio
         const linkFavicon = document.createElement('link'); //Crea un nuevo elemento link para enlazar el favicon
         linkFavicon.rel = 'icon';//Establece el atributo rel del elemento link como "icon" para indicar que se trata de una imagen .ico
@@ -38,10 +45,10 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     const containerHome = document.createElement('containerHome')//se crea el div con el nombre containerHome
     containerHome.innerHTML=`
     <div class="container">
-        <div class="containerImg"><img class="text-noSelect" src="../images/Duo1.gif">
+        <div class="containerImg"><img src="../images/Duo1.gif">
             <div class="textCenter">
                 <h1>¡La forma divertida, efectiva y <br>gratis de aprender un idioma!</h1>
-                <div class="buttons">
+                <div class="containerButtons">
                     <button class="btn1">EMPIEZA AHORA</button><br>
                     <button class="btn2">YA TENGO UNA CUENTRA</button>
                 </div>
