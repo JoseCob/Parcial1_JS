@@ -45,11 +45,14 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     const containerHome = document.createElement('containerHome')//se crea el div con el nombre containerHome
     containerHome.innerHTML=`
     <div class="container">
-        <div class="containerImg"><img src="../images/Duo1.gif">
-            <div class="textCenter">
+        <div class="containerElements">
+            <div class="contentIMG"><img src="../images/Duo1.gif"></div>
+            <div class="containerCenter">
                 <h1>¡La forma divertida, efectiva y <br>gratis de aprender un idioma!</h1>
                 <div class="containerButtons">
-                    <button class="btn1">EMPIEZA AHORA</button><br>
+                    <a href="#">
+                        <button class="btn1">EMPIEZA AHORA</button>
+                    </a>
                     <button class="btn2">YA TENGO UNA CUENTRA</button>
                 </div>
             </div>
