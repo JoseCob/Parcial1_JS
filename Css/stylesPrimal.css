@@ -57,7 +57,7 @@ h1 {/*Clase para el título de la página principal*/
   width: 330px;/*Ancho del boton de forma independiente por la etiqueta <a>*/
   color: #ffffff;/*Color del texto del botón*/
   background-color: #58CC02;/*Color de fondo del botón*/
-  border-radius: 10px;/*Genera Borde redondo*/
+  border-radius: 14px;/*Genera Borde redondo*/
   border-bottom: 4px solid #58A700; /*Propiedad de atajo para bordes inferiores */
   border-bottom-style: 4px solid #58CC02; /*pinta el atajo para el estilo borde inferior*/
   border-top: 2px solid #58CC02;/*Propiedad de atajo para bordes superior */
@@ -70,9 +70,19 @@ h1 {/*Clase para el título de la página principal*/
   font-size: 15px;/*Tamaño del texto*/
   cursor: pointer;
 }
-.btn1:hover{
-  background-color: #61E002;
+.textButtonContainerHome{/*Clase para el texto dentro del botón*/
+  margin-top: -5px;
 }
+.btn1:hover{
+  border-bottom-style: 2px solid #58CC02; /*pinta el atajo para el estilo borde inferior*/
+}
+.btn1:active{
+  margin-top: 5px;
+  padding: 12.5px;/*Contenedor del botón*/
+  background-color: #61E002;
+  border-bottom: 2px solid #58CC02; /*Propiedad de atajo para bordes inferiores */
+}
+
 .btn2{
   margin-top: -15px;
   padding: 15px;

@@ -51,9 +51,13 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                 <h1>¡La forma divertida, efectiva y <br>gratis de aprender un idioma!</h1>
                 <div class="containerButtons">
                     <a href="#">
-                        <button class="btn1">EMPIEZA AHORA</button>
+                        <button class="btn1">
+                            <div class="textButtonContainerHome">EMPIEZA AHORA</div>
+                        </button>
                     </a>
-                    <button class="btn2">YA TENGO UNA CUENTRA</button>
+                    <button class="btn2">
+                        <div class="textButtonContainerHome">YA TENGO UNA CUENTRA</div>
+                    </button>
                 </div>
             </div>
         </div>
