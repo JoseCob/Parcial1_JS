@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     //se crea el div del id="containerHome"
     const containerHome = document.createElement('containerHome')//se crea el div con el nombre containerHome
     containerHome.innerHTML=`
+    <!--Sección del contenido principal-->
     <div class="container">
         <div class="containerElements">
             <div class="contentIMG"><img src="../images/Duo1.gif"></div>
@@ -55,11 +56,17 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                             <div class="textButtonContainerHome">EMPIEZA AHORA</div>
                         </button>
                     </a>
-                    <button class="btn2">
+                    <button class="btn2" id="buttonReset">
                         <div class="textButtonContainerHome">YA TENGO UNA CUENTRA</div>
                     </button>
                 </div>
             </div>
+        </div>
+    </div>
+    <!--Sección de las banderas-->
+    <div class="containerFlag">
+        <div class="carouselFlags">
+            <div><p>AQUI IRAN LAS BANDERAS</p></div>
         </div>
     </div>`;
     document.body.appendChild(containerHome);//Se llama el html para mostrarlo en la pagina

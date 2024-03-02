@@ -4,7 +4,7 @@ body {/*Clase para la pagina del sitio General*/
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  height: 100vh;
+  height: 95vh;
 }
 
 /*Clase del elemento sobre el contenedor de la página principal*/
@@ -13,8 +13,10 @@ body {/*Clase para la pagina del sitio General*/
   justify-content: center;
   align-items: center;
   height: 80vh;
-  padding: 48px 150px;
+  max-width: 98%;
+  padding: 48px 0px;
 }
+
 .containerElements{/*Contenedor de elementos*/
   align-items: end;
   display: flex;
@@ -22,18 +24,19 @@ body {/*Clase para la pagina del sitio General*/
   justify-content: center;
   position: relative;
   gap: 80px;
-  margin-top: -100px;
+  margin-top: -130px;
 }
+
 .contentIMG{/*Contenido de la imagen*/
   user-select: none;
-  max-width: 75vh;
+  max-width: 100vh;
 }
+
 .containerCenter{/*Clase para centrar el título del h1*/
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-left: -4vw;
-  margin-top: 10px;
+  margin-left: -6vw;
 }
 h1 {/*Clase para el título de la página principal*/
   color:#4B4B4B;
@@ -41,8 +44,9 @@ h1 {/*Clase para el título de la página principal*/
   line-height: 1.5;
   width: 100%;
   padding: 10px;
+  font-size: 1.8rem;
 }
-.containerButtons{
+.containerButtons{/*Clase contenedor de los botones*/
   display: flex;
   line-height: normal;
   flex-direction: column;
@@ -50,10 +54,9 @@ h1 {/*Clase para el título de la página principal*/
   max-width: 330px;
   width: 100%;
   margin-top: 15px;
-  border-color: transparent;
 }
-.textButtonContainerHome{/*Clase para el texto dentro del botón*/
-  margin-top: -5px;
+.textButtonContainerHome{/*Clase para el texto dentro del botón de la página principal*/
+  margin-top: -5px;/*Desplaza el texto hacia la parte superior*/
 }
 .btn1{
   padding: 15px;/*Contenedor del botón*/
@@ -70,9 +73,8 @@ h1 {/*Clase para el título de la página principal*/
   cursor: pointer;/*Cambia el Puntero del mouse*/
 }
 .btn1:hover{
-  background-color: #61E002; /*pinta el atajo para el estilo borde inferior*/
+  background-color: #61E002;/*Color de fondo del botón*/
   border-top: 2px solid #61E002;/*Propiedad de atajo para bordes superior */
-  border-right: 2px solid #61E002;/*Propiedad de atajo para bordes derecho*/
 }
 .btn1:active{
   margin-top: 3px;
@@ -80,22 +82,29 @@ h1 {/*Clase para el título de la página principal*/
   background-color: #61E002;
   border-bottom: 2px solid #58CC02; /*Propiedad de atajo para bordes inferiores */
 }
-
 .btn2{
-  margin-top: -15px;/*Desplaza hacia abajo el boton*/
-  padding: 15px;/*Contenedor del botón*/
+  margin-top: -15px;/*Desplaza hacia abajo el botón*/
+  padding: 16px;/*Contenedor del botón*/
   color: #1EB1F6;/*Color del texto del botón*/
   background-color: #ffffff;/*Color de fondo del botón*/
   border-radius: 14px;/*Genera Borde redondo*/
-  border-bottom: 4px solid #E5E5E5;/*Propiedad de atajo para bordes inferiores */
-  border-top: 2px solid #E5E5E5;/*Propiedad de atajo para bordes superior */
+  border-bottom: 4px solid #E5E5E5;/*Propiedad de atajo para bordes inferiores*/
+  border-top: 2px solid #E5E5E5;/*Propiedad de atajo para bordes superior*/
   border-right: 2px solid #E5E5E5;/*Propiedad de atajo para bordes derecho*/
   border-left: 2px solid #E5E5E5;/*Propiedad de atajo para bordes izquierdo*/
-  font-weight: bold;/*Textto en negritas*/
+  font-weight: bold;/*Texto en negritas*/
   font-size: 15px;/*Tamaño del texto*/
   cursor: pointer;/*Cambia el Puntero del mouse*/
 }
 .btn2:hover{
   background-color: #E5E5E5;
   border-color: #CECECE;
+}
+.btn2:active{
+  margin-top: -10px;
+  padding: 13.5px;/*Contenedor del botón*/
+  background-color: #E5E5E5;
+}
+.btn2:focus:not(:hover) {/*Esta clase hace que el botón recupere el hover cuando este pierde el foco*/
+  background-color: #ffffff;
 }
