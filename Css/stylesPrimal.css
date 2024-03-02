@@ -52,57 +52,50 @@ h1 {/*Clase para el título de la página principal*/
   margin-top: 15px;
   border-color: transparent;
 }
+.textButtonContainerHome{/*Clase para el texto dentro del botón*/
+  margin-top: -5px;
+}
 .btn1{
-  padding: 14px;/*Contenedor del botón*/
-  width: 330px;/*Ancho del boton de forma independiente por la etiqueta <a>*/
+  padding: 15px;/*Contenedor del botón*/
+  width: 327px;/*Ancho del boton de forma independiente por la etiqueta <a>*/
   color: #ffffff;/*Color del texto del botón*/
   background-color: #58CC02;/*Color de fondo del botón*/
   border-radius: 14px;/*Genera Borde redondo*/
   border-bottom: 4px solid #58A700; /*Propiedad de atajo para bordes inferiores */
-  border-bottom-style: 4px solid #58CC02; /*pinta el atajo para el estilo borde inferior*/
   border-top: 2px solid #58CC02;/*Propiedad de atajo para bordes superior */
-  border-top-style: 2px #58CC02;/*pinta el atajo para el estilo borde superior*/
   border-right: 2px solid #58CC02;/*Propiedad de atajo para bordes derecho*/
-  border-right-style: 2px #58CC02;/*pinta el atajo para el estilo borde derecho*/
   border-left: 2px #58CC02;/*Propiedad de atajo para bordes izquierdo*/
-  border-left-style: 2px #58CC02;/*pinta el atajo para el estilo borde izquierdo*/
   font-weight: bold;/*Textto en negritas*/
   font-size: 15px;/*Tamaño del texto*/
-  cursor: pointer;
-}
-.textButtonContainerHome{/*Clase para el texto dentro del botón*/
-  margin-top: -5px;
+  cursor: pointer;/*Cambia el Puntero del mouse*/
 }
 .btn1:hover{
-  border-bottom-style: 2px solid #58CC02; /*pinta el atajo para el estilo borde inferior*/
+  background-color: #61E002; /*pinta el atajo para el estilo borde inferior*/
+  border-top: 2px solid #61E002;/*Propiedad de atajo para bordes superior */
+  border-right: 2px solid #61E002;/*Propiedad de atajo para bordes derecho*/
 }
 .btn1:active{
-  margin-top: 5px;
-  padding: 12.5px;/*Contenedor del botón*/
+  margin-top: 3px;
+  padding: 14.5px;/*Contenedor del botón*/
   background-color: #61E002;
   border-bottom: 2px solid #58CC02; /*Propiedad de atajo para bordes inferiores */
 }
 
 .btn2{
-  margin-top: -15px;
-  padding: 15px;
-  color: #1EB1F6;
-  background-color: #ffffff;
-  border-color: #E5E5E5;
-  border-bottom: 4px solid #E5E5E5; /*Propiedad de atajo para bordes inferiores */
-  border-bottom-style: 4px solid #ffffff; /*pinta el atajo para el estilo borde inferior*/
+  margin-top: -15px;/*Desplaza hacia abajo el boton*/
+  padding: 15px;/*Contenedor del botón*/
+  color: #1EB1F6;/*Color del texto del botón*/
+  background-color: #ffffff;/*Color de fondo del botón*/
+  border-radius: 14px;/*Genera Borde redondo*/
+  border-bottom: 4px solid #E5E5E5;/*Propiedad de atajo para bordes inferiores */
+  border-top: 2px solid #E5E5E5;/*Propiedad de atajo para bordes superior */
   border-right: 2px solid #E5E5E5;/*Propiedad de atajo para bordes derecho*/
-  border-right-style: 2px #ffffff;/*pinta el atajo para el estilo borde derecho*/
-  border-radius: 10px;
-  font-weight: bold;
+  border-left: 2px solid #E5E5E5;/*Propiedad de atajo para bordes izquierdo*/
+  font-weight: bold;/*Textto en negritas*/
   font-size: 15px;/*Tamaño del texto*/
-  cursor: pointer;
+  cursor: pointer;/*Cambia el Puntero del mouse*/
 }
 .btn2:hover{
   background-color: #E5E5E5;
   border-color: #CECECE;
-  border-bottom: 4px solid #CECECE; /*Propiedad de atajo para bordes inferiores */
-  border-bottom-style: 4px solid #CECECE; /*pinta el atajo para el estilo borde inferior*/
-  border-right: 2px solid #CECECE;/*Propiedad de atajo para bordes derecho*/
-  border-right-style: 2px #CECECE;/*pinta el atajo para el estilo borde derecho*/
 }
