@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
             <div class="containerCenter">
                 <h1>¡La forma divertida, efectiva y <br>gratis de aprender un idioma!</h1>
                 <div class="containerButtons">
-                    <a href="#">
+                    <a href="#enlace">
                         <button class="btn1">
                             <div class="textButtonContainerHome">EMPIEZA AHORA</div>
                         </button>
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                 <div class="carouselFlags">
                     <ul class="lineFlags" style="transform: translateX(0px);">
                         <li>
-                            <a href="#" class="Flag">
+                            <a href="#enlace" class="Flag">
                                 <svg viewBox="0 0 82 66" class="svgFlag" style="height: 28.9756px; width: 36px;">
                                     <image height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image>
                                 </svg>
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="Flag">
+                            <a href="#enlace" class="Flag">
                                 <svg viewBox="0 132 82 66" class="svgFlag" style="height: 28.9756px; width: 36px;">
                                     <image height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image>
                                 </svg>
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="Flag">
+                            <a href="#enlace" class="Flag">
                                 <svg viewBox="0 198 82 66" class="svgFlag" style="height: 28.9756px; width: 36px;">
                                     <image height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image>
                                 </svg>
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="Flag">
+                            <a href="#enlace" class="Flag">
                                 <svg viewBox="0 330 82 66" class="svgFlag" style="height: 28.9756px; width: 36px;">
                                     <image height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image>
                                 </svg>
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="Flag">
+                            <a href="#enlace" class="Flag">
                                 <svg viewBox="0 594 82 66" class="svgFlag" style="height: 28.9756px; width: 36px;">
                                     <image height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image>
                                 </svg>
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="Flag">
+                            <a href="#enlace" class="Flag">
                                 <svg viewBox="0 2244 82 66" class="svgFlag" style="height: 28.9756px; width: 36px;">
                                     <image height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image>
                                 </svg>
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="Flag">
+                            <a href="#enlace" class="Flag">
                                 <svg viewBox="0 528 82 66" class="svgFlag" style="height: 28.9756px; width: 36px;">
                                     <image height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image>
                                 </svg>
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="Flag">
+                            <a href="#enlace" class="Flag">
                                 <svg viewBox="0 792 82 66" class="svgFlag" style="height: 28.9756px; width: 36px;">
                                     <image height="3168" width="82" xlink:href="https://d35aaqx5ub95lt.cloudfront.net/vendor/87938207afff1598611ba626a8c4827c.svg"></image>
                                 </svg>
@@ -185,18 +185,18 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
             <div>
                 <div class="categoryFooter">Sobre nosotros</div>
                 <ul>
-                    <li><a href="#">Cursos</a></li>
-                    <li><a href="#">Misión</a></li>
-                    <li><a href="#">Método de enseñanza</a></li>
-                    <li><a href="#">Eficacia</a></li>
-                    <li><a href="#">Equipo</a></li>
-                    <li><a href="#">Investigación</a></li>
-                    <li><a href="#">Empleo</a></li>
-                    <li><a href="#">Guía para uso de marca</a></li>
-                    <li><a href="#">Tienda</a></li>
-                    <li><a href="#">Prensa</a></li>
-                    <li><a href="#">Inversionistas</a></li>
-                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#enlace">Cursos</a></li>
+                    <li><a href="#enlace">Misión</a></li>
+                    <li><a href="#enlace">Método de enseñanza</a></li>
+                    <li><a href="#enlace">Eficacia</a></li>
+                    <li><a href="#enlace">Equipo</a></li>
+                    <li><a href="#enlace">Investigación</a></li>
+                    <li><a href="#enlace">Empleo</a></li>
+                    <li><a href="#enlace">Guía para uso de marca</a></li>
+                    <li><a href="#enlace">Tienda</a></li>
+                    <li><a href="#enlace">Prensa</a></li>
+                    <li><a href="#enlace">Inversionistas</a></li>
+                    <li><a href="#enlace">Contáctanos</a></li>
                 </ul>
             </div>
         </div>
@@ -204,13 +204,13 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
             <div>
                 <div class="categoryFooter">Productos</div>
                 <ul>
-                    <li><a href="#">Duolingo</a></li>
-                    <li><a href="#">Duolingo for Schools</a></li>
-                    <li><a href="#">Duolingo English Test</a></li>
-                    <li><a href="#">Podcast</a></li>
-                    <li><a href="#">Duolingo for Business</a></li>
-                    <li><a href="#">Súper Duolingo</a></li>
-                    <li><a href="#">Regala Súper Duolingo</a></li>
+                    <li><a href="#enlace">Duolingo</a></li>
+                    <li><a href="#enlace">Duolingo for Schools</a></li>
+                    <li><a href="#enlace">Duolingo English Test</a></li>
+                    <li><a href="#enlace">Podcast</a></li>
+                    <li><a href="#enlace">Duolingo for Business</a></li>
+                    <li><a href="#enlace">Súper Duolingo</a></li>
+                    <li><a href="#enlace">Regala Súper Duolingo</a></li>
                 </ul>
             </div>
         </div>
@@ -218,8 +218,8 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
             <div>
                 <div class="categoryFooter">Aplicaciones</div>
                 <ul>
-                    <li><a href="#">Duolingo para Android</a></li>
-                    <li><a href="#">Duolingo para iOS</a></li>
+                    <li><a href="#enlace">Duolingo para Android</a></li>
+                    <li><a href="#enlace">Duolingo para iOS</a></li>
                 </ul>
             </div>
         </div>
@@ -227,10 +227,10 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
             <div>
                 <div class="categoryFooter">Ayuda y soporte</div>
                 <ul>
-                    <li><a href="#">App de Duolingo</a></li>
-                    <li><a href="#">Schools</a></li>
-                    <li><a href="#">Duolingo English Test</a></li>
-                    <li><a href="#">Estado</a></li>
+                    <li><a href="#enlace">App de Duolingo</a></li>
+                    <li><a href="#enlace">Schools</a></li>
+                    <li><a href="#enlace">Duolingo English Test</a></li>
+                    <li><a href="#enlace">Estado</a></li>
                 </ul>
             </div>
         </div>
@@ -238,19 +238,19 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
             <div>
                 <div class="categoryFooter">Términos y privacidad</div>
                 <ul>
-                    <li><a href="#">Normas de la comunidad</a></li>
-                    <li><a href="#">Términos</a></li>
-                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#enlace">Normas de la comunidad</a></li>
+                    <li><a href="#enlace">Términos</a></li>
+                    <li><a href="#enlace">Privacidad</a></li>
                 </ul>
             </div>
             <div>
                 <div class="categoryFooter">Social</div>
                 <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#enlace">Blog</a></li>
+                    <li><a href="#enlace">Instagram</a></li>
+                    <li><a href="#enlace">Facebook</a></li>
+                    <li><a href="#enlace">Twitter</a></li>
+                    <li><a href="#enlace">YouTube</a></li>
                 </ul>
             </div>
         </div>
@@ -259,32 +259,32 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     <div class="subContentFooter">
         <div class="textSubFooter">Idioma de la página:</div>
         <ul class="subNavFooter">
-            <li class="textNavFooter"><a href="#" class="textNav">العربية</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">বাংলা</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Čeština</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Deutsch</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Ελληνικά</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">English</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Español</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Français</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">हिंदी</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Magyar</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Bahasa Indonesia</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Italiano</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">日本語</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">한국어</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Nederlands</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Polski</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Português</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Română</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Русский</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">తెలుగు</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">ภาษาไทย</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Tagalog</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Türkçe</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Українською</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">Tiếng Việt</a></li>
-            <li class="textNavFooter"><a href="#" class="textNav">中文</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">العربية</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">বাংলা</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Čeština</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Deutsch</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Ελληνικά</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">English</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Español</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Français</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">हिंदी</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Magyar</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Bahasa Indonesia</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Italiano</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">日本語</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">한국어</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Nederlands</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Polski</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Português</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Română</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Русский</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">తెలుగు</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">ภาษาไทย</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Tagalog</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Türkçe</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Українською</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">Tiếng Việt</a></li>
+            <li class="textNavFooter"><a href="#enlace" class="textNav">中文</a></li>
         </ul>
     </div>`;
     footer.classList.add('footer');// Añadir una clase específica a la etiqueta footer
