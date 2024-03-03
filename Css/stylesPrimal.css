@@ -1,6 +1,10 @@
-body {/*Clase para la pagina del sitio General*/
+body {/*Clase General para la pagina*/
   margin: 0;
   font-family: "Arial", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;/*desplazamiento de la página sea suave*/
 }
 
 /*Estilos para el elemento del contenedor de la página principal*/
@@ -9,28 +13,27 @@ body {/*Clase para la pagina del sitio General*/
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 78vh;
+  height: 74.6vh;
   max-width: 98%;
   padding: 48px 0px;
+  overflow: hidden;
+  position: relative;
 }
-
 .containerElements{/*clase del Contenedor de elementos*/
   align-items: end;
   display: flex;
   flex: 1;
   justify-content: center;
-  position: relative;
   gap: 80px;
   margin-top: -130px;
+  position: absolute;
 }
-
 .contentIMG{/*Contenido de la imagen*/
   user-select: none;
   max-width: 100vh;
   margin-top: 50px;
   margin-left: -50px;
 }
-
 .containerCenter{/*Clase para centrar el título del h1*/
   align-items: center;
   display: flex;
@@ -130,9 +133,7 @@ image {
   height: 75px;
   justify-content: center;
   padding: 0 40px;
-  position: fixed; /*fijar el carrusel al borde inferior*/
-  bottom: 0; /* Posicionar en la parte inferior */
-  width: 100%; /* Ocupa todo el ancho de la página */
+  position: relative;
 }
 .containerCarouselFlags{
   max-width: 1036px;

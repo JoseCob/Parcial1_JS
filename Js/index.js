@@ -16,6 +16,21 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
         stylesNavBar.href = '../Css/navBar.css';//Establece el atributo href del elemento link con la ruta al archivo CSS para la página 
         const headCSS2 = document.querySelector('head');//Selecciona el elemento head del documento HTML
         headCSS2.appendChild(stylesNavBar);//Agrega el elemento link al elemento head
+        //Añade el archivo CSS main
+        const stylesMain = document.createElement('link');
+        stylesMain.rel = 'stylesheet';
+        stylesMain.type = 'text/css';
+        stylesMain.href = '../Css/main.css';
+        const headCSS3 = document.querySelector('head');
+        headCSS3.appendChild(stylesMain);
+        //Añade el archivo CSS footer
+        const stylesFooter = document.createElement('link');
+        stylesFooter.rel = 'stylesheet';
+        stylesFooter.type = 'text/css';
+        stylesFooter.href = '../Css/footer.css';
+        const headCSS4 = document.querySelector('head');
+        headCSS4.appendChild(stylesFooter);
+
         //Se crea el favicon del sitio
         const linkFavicon = document.createElement('link'); //Crea un nuevo elemento link para enlazar el favicon
         linkFavicon.rel = 'icon';//Establece el atributo rel del elemento link como "icon" para indicar que se trata de una imagen .ico
@@ -44,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     //se crea el div del id="containerHome"
     const containerHome = document.createElement('containerHome')//se crea el div con el nombre containerHome
     containerHome.innerHTML=`
-    <!--Sección del contenido principal-->
     <div class="container">
         <div class="containerElements">
             <div class="contentIMG"><img src="../images/Duo1.gif"></div>
@@ -63,7 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
             </div>
         </div>
     </div>
-    <!--Sección de las banderas-->
     <div class="containerFlag">
         <nav class="containerCarouselFlags">
             <span class="directionArrow linedisplacement">&lang;</span>
@@ -154,4 +167,95 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
             }
         });
     });
+
+    //Se crea el contenedor Main de la pagina
+
+    //Se crea el contenedor footer de la pagina
+    const footer = document.createElement('footer')//se crea el elemento footer
+    // Establecer el contenido HTML del footer
+    footer.innerHTML=`
+    <div class="containerFooter">
+        <div class="contentFooter">
+            <div>
+                <div class="categoryFooter">Sobre nosotros</div>
+                <ul>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Misión</a></li>
+                    <li><a href="#">Método de enseñanza</a></li>
+                    <li><a href="#">Eficacia</a></li>
+                    <li><a href="#">Equipo</a></li>
+                    <li><a href="#">Investigación</a></li>
+                    <li><a href="#">Empleo</a></li>
+                    <li><a href="#">Guía para uso de marca</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Prensa</a></li>
+                    <li><a href="#">Inversionistas</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contentFooter">
+            <div>
+                <div class="categoryFooter">Productos</div>
+                <ul>
+                    <li><a href="#">Duolingo</a></li>
+                    <li><a href="#">Duolingo for Schools</a></li>
+                    <li><a href="#">Duolingo English Test</a></li>
+                    <li><a href="#">Podcast</a></li>
+                    <li><a href="#">Duolingo for Business</a></li>
+                    <li><a href="#">Súper Duolingo</a></li>
+                    <li><a href="#">Regala Súper Duolingo</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contentFooter">
+            <div>
+                <div class="categoryFooter">Aplicaciones</div>
+                <ul>
+                    <li><a href="#">Duolingo para Android</a></li>
+                    <li><a href="#">Duolingo para iOS</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contentFooter">
+            <div>
+                <div class="categoryFooter">Ayuda y soporte</div>
+                <ul>
+                    <li><a href="#">App de Duolingo</a></li>
+                    <li><a href="#">Schools</a></li>
+                    <li><a href="#">Duolingo English Test</a></li>
+                    <li><a href"#">Estado</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contentFooter">
+            <div>
+                <div class="categoryFooter">Términos y privacidad</div>
+                <ul>
+                    <li><a href="#">Normas de la comunidad</a></li>
+                    <li><a href="#">Términos</a></li>
+                    <li><a href"#">Privacidad</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="categoryFooter">Social</div>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href"#">Facebook</a></li>
+                    <li><a href"#">Twitter</a></li>
+                    <li><a href"#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr class="separatorLine">
+    <div class="subContentFooter">
+        <div class="textSubFooter">Idioma de la página:</div>
+        <ul class="subNavFooter">
+            <li class="textNavFooter"><a href="#" class="textNav">العربية</a></li>
+        </ul>
+    </div>`;
+    footer.classList.add('footer');// Añadir una clase específica a la etiqueta footer
+    document.body.appendChild(footer);// Agrega el footer al final del body
 });
