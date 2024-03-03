@@ -167,8 +167,14 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
             }
         });
     });
-
-    //Se crea el contenedor Main de la pagina
+    //Se crea el contenedor main de la pagina
+    const main = document.createElement('main');
+    main.innerHTML=`
+    <div class="main">
+        <p>HOLA MUNDO</p>
+    </div>`;
+    main.classList.add('main');
+    document.body.appendChild(main);
 
     //Se crea el contenedor footer de la pagina
     const footer = document.createElement('footer')//se crea el elemento footer
@@ -224,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                     <li><a href="#">App de Duolingo</a></li>
                     <li><a href="#">Schools</a></li>
                     <li><a href="#">Duolingo English Test</a></li>
-                    <li><a href"#">Estado</a></li>
+                    <li><a href="#">Estado</a></li>
                 </ul>
             </div>
         </div>
@@ -234,7 +240,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                 <ul>
                     <li><a href="#">Normas de la comunidad</a></li>
                     <li><a href="#">Términos</a></li>
-                    <li><a href"#">Privacidad</a></li>
+                    <li><a href="#">Privacidad</a></li>
                 </ul>
             </div>
             <div>
@@ -242,9 +248,9 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                 <ul>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Instagram</a></li>
-                    <li><a href"#">Facebook</a></li>
-                    <li><a href"#">Twitter</a></li>
-                    <li><a href"#">YouTube</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
                 </ul>
             </div>
         </div>
@@ -254,6 +260,31 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
         <div class="textSubFooter">Idioma de la página:</div>
         <ul class="subNavFooter">
             <li class="textNavFooter"><a href="#" class="textNav">العربية</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">বাংলা</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Čeština</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Deutsch</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Ελληνικά</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">English</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Español</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Français</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">हिंदी</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Magyar</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Bahasa Indonesia</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Italiano</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">日本語</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">한국어</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Nederlands</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Polski</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Português</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Română</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Русский</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">తెలుగు</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">ภาษาไทย</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Tagalog</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Türkçe</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Українською</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">Tiếng Việt</a></li>
+            <li class="textNavFooter"><a href="#" class="textNav">中文</a></li>
         </ul>
     </div>`;
     footer.classList.add('footer');// Añadir una clase específica a la etiqueta footer

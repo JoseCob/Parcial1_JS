@@ -1,13 +1,18 @@
-body {/*Clase General para la pagina*/
+body {/*Clase Generales para la pagina*/
   margin: 0;
   font-family: "Arial", sans-serif;
+  font: 500 17px / 20px sans-serif;
+}
+a{
+  text-decoration: none;
+  background-color: transparent;
 }
 
 html{
   scroll-behavior: smooth;/*desplazamiento de la página sea suave*/
 }
 
-/*Estilos para el elemento del contenedor de la página principal*/
+/*Estilos para el elemento del contenedor containerHome de la página principal*/
 .container{
   box-sizing: inherit;
   display: flex;
@@ -112,7 +117,7 @@ h1 {/*Clase para el título de la página principal*/
   background-color: #ffffff;
 }
 
-/*Estilos para el carrusel de banderas*/
+/*Estilos para el carrusel de banderas en el contenedor containerFlag*/
 li{
   display: list-item;
 }
