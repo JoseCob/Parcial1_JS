@@ -1,23 +1,20 @@
 body {/*Clase para la pagina del sitio General*/
   margin: 0;
   font-family: "Arial", sans-serif;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  height: 95vh;
 }
 
-/*Clase del elemento sobre el contenedor de la página principal*/
+/*Estilos para el elemento del contenedor de la página principal*/
 .container{
+  box-sizing: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 78vh;
   max-width: 98%;
   padding: 48px 0px;
 }
 
-.containerElements{/*Contenedor de elementos*/
+.containerElements{/*clase del Contenedor de elementos*/
   align-items: end;
   display: flex;
   flex: 1;
@@ -30,13 +27,15 @@ body {/*Clase para la pagina del sitio General*/
 .contentIMG{/*Contenido de la imagen*/
   user-select: none;
   max-width: 100vh;
+  margin-top: 50px;
+  margin-left: -50px;
 }
 
 .containerCenter{/*Clase para centrar el título del h1*/
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-left: -6vw;
+  margin-left: -3vw;
 }
 h1 {/*Clase para el título de la página principal*/
   color:#4B4B4B;
@@ -45,6 +44,7 @@ h1 {/*Clase para el título de la página principal*/
   width: 100%;
   padding: 10px;
   font-size: 1.8rem;
+  margin-top: -280px;
 }
 .containerButtons{/*Clase contenedor de los botones*/
   display: flex;
@@ -107,4 +107,73 @@ h1 {/*Clase para el título de la página principal*/
 }
 .btn2:focus:not(:hover) {/*Esta clase hace que el botón recupere el hover cuando este pierde el foco*/
   background-color: #ffffff;
+}
+
+/*Estilos para el carrusel de banderas*/
+li{
+  display: list-item;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+image {
+  overflow: hidden;
+}
+/*Clase para el carrusel de banderas*/
+.containerFlag{
+  align-items: center;
+  border-bottom: 2px solid #E5E5E5;
+  border-top: 2px solid #E5E5E5;
+  display: flex;
+  height: 75px;
+  justify-content: center;
+  padding: 0 40px;
+  position: fixed; /*fijar el carrusel al borde inferior*/
+  bottom: 0; /* Posicionar en la parte inferior */
+  width: 100%; /* Ocupa todo el ancho de la página */
+}
+.containerCarouselFlags{
+  max-width: 1036px;
+  grid-gap: 20px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  margin: auto;
+  overflow-x: auto;
+}
+.directionArrow{
+  color: rgb(175,175,175,1,);
+  cursor: pointer;
+  height: 22px;
+  opacity: .5;
+  width: 14px, 22px;
+  user-select: none;
+}
+.carouselFlags{
+  overflow: hidden;
+}
+.lineFlags{
+  display: flex;
+  gap: 20px;
+  transition: transform .5s ease-in-out;
+}
+/*Clase para el contenido de las banderas*/
+.Flag{
+  align-items: center;
+  color: rgb(119, 119, 119, 1);
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.svgFlag{
+  margin-right: 10px;
+}
+.textFlag{
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
