@@ -74,19 +74,18 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
 
     //Se crea el addEventListener("scroll", (event) => {}); para hacer un evento con el scroll de la página
     addEventListener("scroll", function() {
-        let btnEmpAhora = document.querySelector('.btnHeader');
-
-        /*Logica relacionada con el sticky de la página*/
-        if(window.pageYOffset > 388){//388 es la altura ideal a la que se desea cambiar el texto a un botón entre el btnHeader y el btn2 de la página
-            btnEmpAhora.innerHTML = '<a href="#enlace" class="btnEmpAhora" style="display:block"><span>Empieza ahora</span></a>';
-            //Si es mayor a 388 de altura se cambiara el estilo de btnEmpAhora a  style="display:block" para mostrarce en el header de la página
-        }
-        else{
+        let btnEmpAhora = document.querySelector('.btnHeader');//Se selecciona el estilo de la class=".btnHeader"
+        let getbtnElementHD = document.getElementById('getBtnHidden');//Se obtiene el elemento id="getBtnHidden"
+    
+        /* Logica relacionada con el sticky del headDuolingo de la página + scroll */
+        const rect = getbtnElementHD.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {//Obtiene la parte superior e inferior del botón
             btnEmpAhora.innerHTML = '<button class="btnHeader"><span>IDIOMA DE LA PÁGINA: ESPAÑOL</span><img alt="carácter del header" class="caracterHeader" src="../images/caracterEspecial.svg"></button>';
-            /*Si no se encuentra en la altura 388, se muestra este elemento al principio*/
+        } else {
+            btnEmpAhora.innerHTML = '<a href="#enlace" class="btnEmpAhora" style="display:block"><span>Empieza ahora</span></a>';
         }
     });
-
+    
     //Se crea el contenedor del inicio de la pagina
     //se crea el div del id="containerHome"
     const containerHome = document.createElement('containerHome')//se crea el div con el nombre containerHome
@@ -97,6 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
             <div class="containerCenter">
                 <h1>¡La forma divertida, efectiva y <br>gratis de aprender un idioma!</h1>
                 <div class="containerButtons">
+                    <div id="getBtnHidden"></div>
                     <a href="#enlace">
                         <button class="btn1">
                             <div class="textButtonContainerHome">EMPIEZA AHORA</div>
