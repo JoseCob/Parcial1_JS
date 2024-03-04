@@ -1,48 +1,66 @@
 /*Estilo para el menú de navegación*/
+.headersticky{
+  background: rgb(255, 255, 255);
+  border-bottom: 2px solid transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+@media screen and (min-width: 1080px){
+  .header{
+    margin: 0 auto;
+    max-width: 988px;
+    padding: 0;
+  }
+}
 .header {
-  top: 0;
+  align-items: center;
   display: flex;
+  height: 70px;
+  justify-content: center;
+  padding: 0 15px;
   justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-  background-color: #ffffff;
-  max-width: 1004px;
-  padding: 10px 10px;
-  margin: 1px auto;
-  font-weight:900;
 }
-.header a .logo{
-  float: left;
-  align-items: center;
-  grid:80px;/*Divide la página en una cuadrícula o rejilla*/
-  text-decoration: none;/*Oculta el enlace o vinculo del texto*/
-  padding: 12px;
-  cursor: pointer;
-}
-.header-right {
-  float: right;
+.duoLogo{
+  height: 38px;
+  width: 161px;
 }
 .btnHeader{
+  color: rgb(175, 175, 175);
+  font-weight: bold;
   align-items: center;
   display: flex;
-  white-space: nowrap;/*Espacio en blanco dentro de un elemento*/
+  white-space: nowrap;
+  text-transform: uppercase;
+  background: none;
   border: none;
-  cursor: pointer;/*Puntero del mouse*/
-  user-select: none;/*Evita que se marque el texto*/
-  background-color: #ffffff;
-}
-.spanHeader{
-  font-family: "Bahnschrift SemiBold";/*Tipo de letra*/
-  font-weight: bolder;/*Texto en negritas*/
-  color: rgb(70, 68, 68);
-  opacity: 0.5;/*Muestra la transparencia de fondo sobre un elemento*/
-  font-size:16px;
-  letter-spacing: -0.15px;/*Espaciado de texto*/
-  margin-top: -4.5px;/*Desplazamiento hacia abajo el texto*/
+  cursor: pointer;
+  user-select: none;
+  padding: 0;
+  transition: filter .2s;
+  font-size: 13.5px;
+  letter-spacing: .8px;
 }
 .caracterHeader{
   height: 14px;
   margin-left: 8px;
   width: 14px;
+}
+
+#stickyContent{
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 0 solid transparent; /* Añadir esta línea */
+  transition: border-bottom 0.2s ease-in-out; /* Añadir esta línea */
+  z-index: 100;
+}
+
+.sticky.active {
+  border-bottom: 2px solid #E5E5E5; /* Añadir esta línea */
 }
 /*Fin del menú de navegación */

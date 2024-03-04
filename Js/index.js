@@ -41,12 +41,14 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
 
     //se crea el div del id="headDuolingo">
     const headDuolingo = document.createElement('headDuolingo');
+    headDuolingo.id="sticky";
+    headDuolingo.classList.add('headersticky');// Añadir una clase específica a la etiqueta footer
     headDuolingo.innerHTML=`
     <div class="header">
-        <a href="../Html/index.html" class="logo"><img src="../images/Duo.svg" style="width: 100%; height: 100%;"></a>
-        <div class="header-right">
+        <a href="../Html/index.html"><img src="../images/Duo.svg" class="duoLogo" style="width: 100%; height: 100%;"></a>
+        <div>
             <button class="btnHeader">
-                <span class="spanHeader">IDIOMA DE LA PÁGINA: 
+                <span>IDIOMA DE LA PÁGINA: 
                     ESPAÑOL
                 </span>
                     <img alt="carácter del header" class="caracterHeader" src="../images/caracterEspecial.svg">
@@ -54,12 +56,30 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
         </div>
     </div>`;
     document.body.appendChild(headDuolingo);
+    //Se crea la animación sticky para el Navbar de la página
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    let navbar = document.querySelector("headDuolingo");
+
+    // Get the offset position of the navbar
+    let sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky", "active")
+        } else {
+          navbar.classList.remove("sticky" ,"active");
+        }
+    }
 
     //Se crea el contenedor del inicio de la pagina
     //se crea el div del id="containerHome"
     const containerHome = document.createElement('containerHome')//se crea el div con el nombre containerHome
     containerHome.innerHTML=`
-    <div class="container">
+    <div id="stickyContent" class="container">
         <div class="containerElements">
             <div class="contentIMG"><img src="../images/Duo1.gif"></div>
             <div class="containerCenter">
