@@ -63,7 +63,7 @@
 }
 /*Estilo para el botón oculto en el navbar*/
 /*clase para el btnEmpAhora*/
-.hideBtn {
+.hideBtn {/*clase que Oculta un elemento de tipo botón*/
   display: none;
 }
 .btnEmpAhora{
