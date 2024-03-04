@@ -202,10 +202,91 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     //Se crea el contenedor main de la pagina
     const main = document.createElement('main');
     main.innerHTML=`
-    <div class="main">
-        <p>HOLA MUNDO</p>
-    </div>`;
-    main.classList.add('main');
+    <div class="containerotherElements">
+        <section><!--Primera sección-->
+            <section>
+                <div>
+                    <h2 class="textotherElements">divertido, efectivo y gratis</h2>
+                    <p>
+                        <span>
+                            Aprender con Duolingo es divertido y <a class="textImportant" href="#enlace">los estudios demuestran que funciona</a>. 
+                            ¡En nuestras lecciones cortas ganarás puntos y habilitarás nuevas unidades al mismo 
+                            tiempo que desarrollas tus habilidades de comunicación en la vida real!
+                        </span>
+                    </p>
+                </div>
+                <div><img alt="gifDuo2" src="../images/Duo2.gif"></div>
+            </section>
+            <section>
+                <div>
+                    <h2 class="textotherElements">respaldado por la ciencia</h2>
+                    <p>
+                        <span>
+                            Gracias a la combinación de métodos de enseñanza respaldados por la ciencia y un contenido 
+                            entretenido, creamos cursos que enseñan de forma eficiente a leer, escribir, entender y hablar 
+                            en otros idiomas.
+                        </span>
+                    </p>
+                </div>
+                <div><img alt="gifDuo3" src="../images/Duo3.gif"></div>
+            </section>
+            <section>
+                <div>
+                    <h2 class="textotherElements">mantén tu motivación</h2>
+                    <p>
+                        <span>
+                            Nuestras funcionalidades y desafíos son divertidos y hacen que aprender se sienta como un juego. 
+                            ¡Vas a poder formar un hábito de aprendizaje sin esfuerzo! Y, por supuesto, recibirás 
+                            recordatorios de nuestra adorable mascota, Duo, el búho.
+                        </span>
+                    </p>
+                </div>
+                <div><img alt="gifDuo4" src="../images/Duo4.gif"></div>
+            </section>
+            <section>
+                <div>
+                    <h2 class="textotherElements">aprendizaje personalizado</h2>
+                    <p>
+                        <span>
+                            Al combinar lo mejor de la inteligencia artificial y las ciencias de idiomas, las lecciones se 
+                            adaptan según tu desempeño para ayudarte a aprender al nivel adecuado y a tu propio ritmo.
+                        </span>
+                    </p>
+                </div>
+                <div><img alt="gifDuo5" src="../images/Duo5.gif"></div>
+            </section>
+        </section>
+
+        <section><!--Segunda sección-->
+            <div>
+                <div>
+                    <h1></h1>
+                    <div></div>
+                </div>
+                <div>
+                    <img alt="fontOficialDuolingo" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/229d5f88cc9df2eb0b68f39466500911.svg">
+                    <img src="../images/Duo12.gif">
+                </div>
+            </div>
+        </section>
+    </div>
+    <section><!--Tercera sección-->
+        <div>
+            <div>
+                <img alt="gifDuo6" src="../images/Duo6.gif">
+            </div>
+            <div>
+                <picture>
+                    <h2 class="textSuperDuo">POWER UP WITH</h2>
+                    <img alt="textOficialDuolingo" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/dd7453522d3192d4df06d4652508b8bc.svg" height="55"  width="339">
+                </picture>
+                <button class="btnSuperDuo">
+                    <span class="textbtnSuperDuo">Prueba 2 semanas gratis</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section><!--Cuarta sección--></section>`;
     document.body.appendChild(main);
 
     //Se crea el contenedor footer de la pagina
