@@ -53,21 +53,18 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                 </span>
                     <img alt="carácter del header" class="caracterHeader" src="../images/caracterEspecial.svg">
             </button>
+            <a href="#enlace" class="btnEmpAhora hideBtn"><span>Empieza ahora</span></a><!--Boton que esta oculto en el navbar-->
         </div>
     </div>`;
     document.body.appendChild(headDuolingo);
     //Se crea la animación sticky para el Navbar de la página
-    // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {myFunction()};
-
-    // Get the navbar
-    let navbar = document.querySelector("headDuolingo");
-
-    // Get the offset position of the navbar
-    let sticky = navbar.offsetTop;
-
-    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
+    //Empieza Cuando el usuario se desplaza por la página, se ejecuta mySticky. *EVENTO CON EL SCROLL*
+    window.onscroll = function() {mySticky()};
+    let navbar = document.querySelector("headDuolingo");//Se Obtiene el navbar
+    let sticky = navbar.offsetTop;//Se Obtiene la posición de desplazamiento del navbar
+    /*se añade la clase "sticky" al navbar cuando alcanza una posición específica durante el scroll, 
+    y se quita esa clase cuando se deja esa posición*/
+    function mySticky() {
         if (window.pageYOffset >= sticky) {
           navbar.classList.add("sticky", "active")
         } else {
@@ -90,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                             <div class="textButtonContainerHome">EMPIEZA AHORA</div>
                         </button>
                     </a>
-                    <button class="btn2" id="buttonReset">
+                    <button class="btn2" id="viewButtonHD">
                         <div class="textButtonContainerHome">YA TENGO UNA CUENTRA</div>
                     </button>
                 </div>
