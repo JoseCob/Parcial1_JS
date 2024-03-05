@@ -5,6 +5,10 @@ body {
   font: 500 17px / 20px sans-serif;
 }
 
+main{
+  display: block;
+}
+
 a{
   text-decoration: none;
   background-color: transparent;
@@ -22,6 +26,19 @@ h1 {
   padding: 10px;
   font-size: 1.8rem;
   margin-top: -280px;
+  font-weight: 700;
+}
+
+h2{
+  color: rgb(241,247,251);
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0 0 25px;
+  font-weight: 700;
+}
+
+p{
+  margin: 0 0 18px;
 }
 
 li{
@@ -36,6 +53,7 @@ ul{
 
 image {
   overflow: hidden;
+  border-style: none;
 }
 
 hr{

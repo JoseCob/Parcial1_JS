@@ -188,11 +188,12 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     const main = document.createElement('main');
     main.innerHTML=`
     <div class="containerotherElements">
-        <section><!--Primera sección-->
-            <section>
-                <div>
-                    <h2 class="textotherElements">divertido, efectivo y gratis</h2>
-                    <p>
+        <div></div><!--Aqui iria una clase con scroll para ir pintando la pagina hasta llegar a 1-->
+        <section class="otherContentElements">
+            <section class="leftDirectionContentrOther">
+                <div class="textContainerLeftDirection">
+                    <h2 class="textTitleLeftDirection">divertido, efectivo y gratis</h2>
+                    <p class="contentSubTextLeft">
                         <span>
                             Aprender con Duolingo es divertido y <a class="textImportant" href="#enlace">los estudios demuestran que funciona</a>. 
                             ¡En nuestras lecciones cortas ganarás puntos y habilitarás nuevas unidades al mismo 
@@ -200,7 +201,10 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                         </span>
                     </p>
                 </div>
-                <div><img alt="gifDuo2" src="../images/Duo2.gif"></div>
+                <div class="imgContentLeftDirection">
+                    <img class="imgLeftDirection" alt="gifDuo2" src="../images/Duo2.gif">
+                    <span class="imgsubcontentLeftDirection"></span>
+                </div>
             </section>
             <section>
                 <div>
@@ -484,13 +488,6 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
       position: fixed;
       width: 100%;
       z-index: 2;
-    }
-    @media screen and (min-width: 1080px){
-      .header{
-        margin: 0 auto;
-        max-width: 988px;
-        padding: 0;
-      }
     }
     .header {
       align-items: center;
@@ -787,7 +784,16 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
         margin: 8px 12px;
     }
     /*Estilos para el footer responsivo*/
-    @media screen and (min-width: 1080px){/*clase responsiva del footer*/
+    @media screen and (min-width: 1080px){
+        /*clase responsiva del navbar*/
+        .header{
+            margin: 0 auto;
+            max-width: 988px;
+            padding: 0;
+        }
+        /*clase responsiva del main*/
+
+        /*clase responsiva del footer*/
         .containerFooter{
             gap: 24px;
             grid-template-columns: repeat(5, 178px);
