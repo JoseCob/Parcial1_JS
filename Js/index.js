@@ -267,9 +267,10 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                             </span>
                         </a>
                     </div>
+                    <img class="Duo12Gif" src="../images/Duo12.gif">
                 </div>
                 <div>
-                    <img alt="fontOficialDuolingo" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/229d5f88cc9df2eb0b68f39466500911.svg">
+                    <img class="duoOfice" alt="fontOficialDuolingo" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/229d5f88cc9df2eb0b68f39466500911.svg">
                 </div>
             </div>
         </section>

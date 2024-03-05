@@ -123,6 +123,13 @@
     background-color: #E5E5E5;
     border-bottom: 2px solid rgb(206, 206, 206);
 }
+.Duo12Gif{
+    margin-top:-10%;
+    z-index: 1;
+}
+.duoOfice{
+    margin-top:-45%;
+}
 
 /*clase responsiva del main en este orden*/
 @media screen and (min-width:768px){
