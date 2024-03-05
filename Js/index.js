@@ -281,8 +281,8 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                 <img src="../images/Duo6.gif" class="imgSuperDuo">
             </div>
             <div class="containerbtnSuperDuo">
-                <img class="" alt="Super Duolingo" src="../images/superText.png">
-                <button class="">
+                <img class="imgSuperText" alt="Super Duolingo" src="../images/superText.png"height="91" width="605">
+                <button class="superBtnDuo">
                     <span class="textSuperD">Prueba 2 semanas gratis</span>
                 </button>
             </div>

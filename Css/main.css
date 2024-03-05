@@ -144,7 +144,71 @@
     margin-top:-45%;
 }
 /*Clase para Super Duolingo*/
-
+.fontSuperDuo{
+    background-color: rgb(16,15,62);
+}
+.containerSuperDuolingo{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 48px 15px 96px;
+}
+.contentDuo{
+    aspect-ratio: 1 / 1;
+    line-height: 0;
+    max-width: 345px;
+    position: relative;
+    width: 100%;
+}
+.imgSuperDuo{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.containerbtnSuperDuo{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    max-width: 100%;
+}
+.imgSuperText{
+    height: auto;
+    max-width: 100%;
+    width: 339px;
+}
+.superBtnDuo{
+    height: auto;
+    width: 100%;
+    padding: 14px;
+    border-radius: 15px;
+    color: rgb(0, 4, 55);
+    border-top: 2px solid rgb(229, 229, 229);
+    border-bottom: 6px solid #E5E5E5;
+    border-width: 4px;
+    border-right: 2px solid rgb(229, 229, 229);/*Propiedad de atajo para bordes derecho*/
+    border-left: 2px solid rgb(229, 229, 229);/*Propiedad de atajo para bordes izquierdo*/
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    line-height: 1.2;
+    align-items: center;
+    font-family: "Arial";
+    justify-content: center;
+    text-transform: uppercase;
+    display: inline-flex;
+    font-weight: bold;
+}
+.superBtnDuo:active{
+    user-select: none;
+    padding-bottom: 7px;
+    margin-top: 7px;
+}
 /*Clase para el theContainerotherElements*/
 .theContainerotherElements{
     display: flex;
@@ -236,6 +300,22 @@
         font-size: 48px;
         max-width: 583px;
     }
+    .containerSuperDuolingo{
+        gap: 40px;
+        padding: 64px 0 152px;
+    }
+    .contentDuo{
+        max-width: none;
+        width: 452px;
+    }
+    .imgSuperText{
+        max-width: none;
+        width: 605px;
+    }
+    .superBtnDuo{
+        max-width: 605px;
+        width: auto;
+    }
 }
 
 @media screen and (min-width: 1080px){
@@ -273,5 +353,23 @@
     }
     .thebtncontentOtherElements{
         margin: 0;
+    }
+    .containerSuperDuolingo{
+        flex-direction: row;
+        gap: 40px;
+        justify-content: end;
+        margin: 0 auto;
+        padding: 185px 0;
+        width: 988px;
+    }
+    .contentDuo{
+        flex-shrink: 0;
+        width: 530px;
+    }
+    .imgSuperText{
+        max-width: 100%;
+    }
+    .superBtnDuo{
+        max-width: 418px;
     }
 }
