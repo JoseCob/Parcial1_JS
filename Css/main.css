@@ -55,7 +55,74 @@
     margin-left: 20%;
     width: 35%;
 }
-
+.imgRightDirection{
+    height: 80%;
+    position: absolute;
+    margin-left: 110%;
+    width: 35%;
+}
+.containeroMarket{
+    background-color: rgb(221,244,255);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.contentMarket{
+    display: flex;
+    flex-direction: column;
+    max-width: 1728px;
+    padding: 96px 15px 0;
+    width: 100%;
+}
+.contentBtnMarket{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    z-index: 1;
+}
+.titleMarket{
+    color: rgb(4,44,96);
+    font-family: "Arial", sans-serif;
+    font-size: 36px;
+    letter-spacing: -.02em;
+    line-height: normal;
+    margin: 0;
+    max-width: 330px;
+    text-align: center;
+}
+.containerBtnMarket{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 330px;
+}
+.btnMarket{
+    height: auto;
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 18px;
+    border-top: 2px solid rgb(229, 229, 229);
+    border-bottom: 4px solid rgb(229, 229, 229);
+    border-right: 2px solid rgb(229, 229, 229);/*Propiedad de atajo para bordes derecho*/
+    border-left: 2px solid rgb(229, 229, 229);/*Propiedad de atajo para bordes izquierdo*/
+    background-color: rgb(255, 255, 255);
+}
+.btnMarket:hover{
+    background-color: #E5E5E5;
+    border-top: 2px solid rgb(206, 206, 206);
+    border-bottom: 4px solid rgb(206, 206, 206);
+    border-right: 2px solid rgb(206, 206, 206);/*Propiedad de atajo para bordes derecho*/
+    border-left: 2px solid rgb(206, 206, 206);/*Propiedad de atajo para bordes izquierdo*/
+}
+.btnMarket:active{
+    margin-top: 1px;
+    padding-bottom: 4.5px;/*Contenedor del botón*/
+    background-color: #E5E5E5;
+    border-bottom: 2px solid rgb(206, 206, 206);
+}
 
 /*clase responsiva del main en este orden*/
 @media screen and (min-width:768px){
@@ -75,6 +142,22 @@
     }
     .imgLeftDirection{
         margin-left: 32.5%;
+    }
+    .contentMarket{
+        padding: 140px 0 0;
+    }
+    .contentBtnMarket{
+        gap: 48px;
+    }
+    .containerBtnMarket{
+        flex-direction: row;
+        gap: 24px; 
+        justify-content: center;
+        max-width: none;
+    }
+    .titleMarket{
+        font-size: 48px;
+        max-width: 583px;
     }
 }
 
@@ -97,5 +180,14 @@
     .imgContentLeftDirection{
         flex-shrink: 0;
         width: 530px;
+    }
+    .otherContentElements2{
+        flex-direction: row-reverse;
+    }
+    .contentMarket{
+        padding: 140px 0 96px;
+    }
+    .titleMarket{
+        font-size: 64px;
     }
 }

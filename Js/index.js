@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
         const rect = getbtnElementHD.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom >= 0) {//Obtiene la parte superior e inferior del botón
             btnEmpAhora.innerHTML = '<button class="btnHeader"><span>IDIOMA DE LA PÁGINA: ESPAÑOL</span><img alt="carácter del header" class="caracterHeader" src="../images/caracterEspecial.svg"></button>';
-        } else {
+        }else {
             btnEmpAhora.innerHTML = '<a href="#enlace" class="btnEmpAhora" style="display:block"><span>Empieza ahora</span></a>';
         }
     });
@@ -203,13 +203,12 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                 </div>
                 <div class="imgContentLeftDirection">
                     <img class="imgLeftDirection" alt="gifDuo2" src="../images/Duo2.gif">
-                    <span class="imgsubcontentLeftDirection"></span>
                 </div>
             </section>
-            <section>
-                <div>
-                    <h2 class="textotherElements">respaldado por la ciencia</h2>
-                    <p>
+            <section class="otherContentElements2 leftDirectionContentrOther">
+                <div class="textContainerLeftDirection">
+                    <h2 class="textTitleLeftDirection">respaldado por la ciencia</h2>
+                    <p class="contentSubTextLeft">
                         <span>
                             Gracias a la combinación de métodos de enseñanza respaldados por la ciencia y un contenido 
                             entretenido, creamos cursos que enseñan de forma eficiente a leer, escribir, entender y hablar 
@@ -217,12 +216,14 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                         </span>
                     </p>
                 </div>
-                <div><img alt="gifDuo3" src="../images/Duo3.gif"></div>
+                <div class="imgContentLeftDirection">
+                    <img class="imgLeftDirection" alt="gifDuo3" src="../images/Duo3.gif">
+                </div>
             </section>
-            <section>
-                <div>
-                    <h2 class="textotherElements">mantén tu motivación</h2>
-                    <p>
+            <section class="leftDirectionContentrOther">
+                <div class="textContainerLeftDirection">
+                    <h2 class="textTitleLeftDirection">mantén tu motivación</h2>
+                    <p class="contentSubTextLeft">
                         <span>
                             Nuestras funcionalidades y desafíos son divertidos y hacen que aprender se sienta como un juego. 
                             ¡Vas a poder formar un hábito de aprendizaje sin esfuerzo! Y, por supuesto, recibirás 
@@ -230,138 +231,52 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                         </span>
                     </p>
                 </div>
-                <div><img alt="gifDuo4" src="../images/Duo4.gif"></div>
+                <div class="imgContentLeftDirection">
+                    <img class="imgLeftDirection" alt="gifDuo4" src="../images/Duo4.gif">
+                </div>
             </section>
-            <section>
-                <div>
-                    <h2 class="textotherElements">aprendizaje personalizado</h2>
-                    <p>
+            <section class="otherContentElements2 leftDirectionContentrOther">
+                <div class="textContainerLeftDirection">
+                    <h2 class="textTitleLeftDirection">aprendizaje personalizado</h2>
+                    <p class="contentSubTextLeft">
                         <span>
                             Al combinar lo mejor de la inteligencia artificial y las ciencias de idiomas, las lecciones se 
                             adaptan según tu desempeño para ayudarte a aprender al nivel adecuado y a tu propio ritmo.
                         </span>
                     </p>
                 </div>
-                <div><img alt="gifDuo5" src="../images/Duo5.gif"></div>
+                <div  class="imgContentLeftDirection">
+                    <img class="imgLeftDirection" alt="gifDuo5" src="../images/Duo5.gif">
+                </div>
             </section>
         </section>
-
-        <section><!--Segunda sección-->
-            <div>
-                <div>
-                    <h1></h1>
-                    <div></div>
+        <div id="hiddenNavbarMarket"></div><!--Oculta el navbar en esta sección-->
+        <section class="containeroMarket">
+            <div class="contentMarket">
+                <div class="contentBtnMarket">
+                    <h1 class="titleMarket">aprende cuando quieras y donde quieras</h1>
+                    <div class="containerBtnMarket">
+                        <a class="btnMarket" href="#enlace">
+                            <span>
+                                <img src="../images/App_store.png" width="140px" height="32px">
+                            </span>
+                        </a>
+                        <a class="btnMarket" href="#enlace">
+                            <span>
+                                <img src="../images/Play_store.png" width="125px" height="40px">
+                            </span>
+                        </a>
+                    </div>
                 </div>
                 <div>
                     <img alt="fontOficialDuolingo" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/229d5f88cc9df2eb0b68f39466500911.svg">
-                    <img src="../images/Duo12.gif">
                 </div>
             </div>
         </section>
     </div>
-    <section><!--Tercera sección-->
-        <div>
-            <div>
-                <img alt="gifDuo6" src="../images/Duo6.gif">
-            </div>
-            <div>
-                <picture>
-                    <h2 class="textSuperDuo">POWER UP WITH</h2>
-                    <img alt="textOficialDuolingo" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/dd7453522d3192d4df06d4652508b8bc.svg" height="55"  width="339">
-                </picture>
-                <button class="btnSuperDuo">
-                    <span class="textbtnSuperDuo">Prueba 2 semanas gratis</span>
-                </button>
-            </div>
-        </div>
-    </section>
-    <section><!--Cuarta sección-->
-        <section>
-            <div>
-                <h2 class="">
-                    <span>
-                        <span>duolingo english&nbsp;test</span>
-                    </span>
-                </h2>
-                <p class="">
-                    Nuestro examen de inglés es conveniente, rápido y económico. El Duolingo English Test integra los últimos avances en 
-                    la ciencia e inteligencia artificial para dar a todas las personas la posibilidad de elegir dónde y cuándo hacer el 
-                    examen y que puedan dar lo mejor de sí. 
-                </p>
-                <a class="" href="#enlace">
-                    <span class="">Certifica tu inglés</span>
-                </a>
-            </div>
-            <div><img alt="gifDuo7" src="../images/Duo7.gif"></div>
-        </section>
-        <section>
-            <div>
-                <h2 class="">
-                    <span>
-                        <span>duolingo for schools</span>
-                    </span>
-                </h2>
-                <p class="">
-                    Maestras y maestros: ¡estamos para ayudarlos! Nuestra herramienta gratuita ayuda a tus estudiantes a aprender 
-                    idiomas a través de la app de Duolingo, tanto dentro como fuera del salón de clases.
-                </p>
-                <a class="" href="#enlace">
-                    <span class="">Potencia tu salón de clases</span>
-                </a>
-            </div>
-            <div><img alt="gifDuo8" src="../images/Duo8.gif"></div>
-        </section>
-        <section>
-            <div>
-                <h2 class="">
-                    <span>
-                        <span>duolingo abc</span>
-                    </span>
-                </h2>
-                <p class="">
-                    ¡Desde aprender idiomas hasta alfabetismo! Con lecciones de fonética y cuentos divertidos, Duolingo ABC enseña a 
-                    niños y niñas de entre 3 y 8 años a leer y escribir… ¡y es totalmente gratis!
-                </p>
-                <a class="" href="#enlace">
-                    <span class="">Conoce Duolingo ABC</span>
-                </a>
-            </div>
-            <div><img alt="gifDuo9" src="../images/Duo9.gif"></div>
-        </section>
-        <section>
-            <div>
-                <h2 class="">
-                    <span>
-                        <span>duolingo math</span>
-                    </span>
-                </h2>
-                <p class="">
-                    ¡Prueba nuestras lecciones cortas y gratis para matemáticas! Con Duolingo Math, los estudiantes podrán 
-                    adelantarse en sus clases de matemáticas y los adultos podrán practicar para mejorar su destreza matemática.
-                </p>
-                <a class="" href="#enlace">
-                    <span class="">Mejora en matemática</span>
-                </a>
-            </div>
-            <div><img alt="gifDuo10" src="../images/Duo10.gif"></div>
-        </section>
-    </section>
-    <section>
-        <div>
-            <div>
-                <h1 class="">aprende idiomas con duolingo</h1>
-                <a class="">
-                    <span class="">Empieza ahora</span> 
-                    <span class=""><img alt="fontOficialDuolingo" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/890eb76de9a395b182c1c28322721405.svg"></span>  
-                </a>
-            </div>
-            <div class="">
-                <span>
-                    <img alt="gifDuo11" src="../images/Duo11.gif">
-                </span>
-            </div>
-        </div>
-    </section>`;
+    <section></section>
+    <section></section>
+    <section></section>`;
     document.body.appendChild(main);
 
     //Se crea el contenedor footer de la pagina
