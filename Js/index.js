@@ -308,15 +308,56 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
             <div><img alt="gifDuo8" src="../images/Duo8.gif"></div>
         </section>
         <section>
-            <div></div>
-            <div></div>
+            <div>
+                <h2 class="">
+                    <span>
+                        <span>duolingo abc</span>
+                    </span>
+                </h2>
+                <p class="">
+                    ¡Desde aprender idiomas hasta alfabetismo! Con lecciones de fonética y cuentos divertidos, Duolingo ABC enseña a 
+                    niños y niñas de entre 3 y 8 años a leer y escribir… ¡y es totalmente gratis!
+                </p>
+                <a class="" href="#enlace">
+                    <span class="">Conoce Duolingo ABC</span>
+                </a>
+            </div>
+            <div><img alt="gifDuo9" src="../images/Duo9.gif"></div>
         </section>
         <section>
-            <div></div>
-            <div></div>
+            <div>
+                <h2 class="">
+                    <span>
+                        <span>duolingo math</span>
+                    </span>
+                </h2>
+                <p class="">
+                    ¡Prueba nuestras lecciones cortas y gratis para matemáticas! Con Duolingo Math, los estudiantes podrán 
+                    adelantarse en sus clases de matemáticas y los adultos podrán practicar para mejorar su destreza matemática.
+                </p>
+                <a class="" href="#enlace">
+                    <span class="">Mejora en matemática</span>
+                </a>
+            </div>
+            <div><img alt="gifDuo10" src="../images/Duo10.gif"></div>
         </section>
     </section>
-    <section><!--Quinta sección--></section>`;
+    <section>
+        <div>
+            <div>
+                <h1 class="">aprende idiomas con duolingo</h1>
+                <a class="">
+                    <span class="">Empieza ahora</span> 
+                    <span class=""><img alt="fontOficialDuolingo" src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/lottie/890eb76de9a395b182c1c28322721405.svg"></span>  
+                </a>
+            </div>
+            <div class="">
+                <span>
+                    <img alt="gifDuo11" src="../images/Duo11.gif">
+                </span>
+            </div>
+        </div>
+    </section>`;
     document.body.appendChild(main);
 
     //Se crea el contenedor footer de la pagina
