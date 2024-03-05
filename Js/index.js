@@ -402,4 +402,339 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     </div>`;
     footer.classList.add('footer');// Añadir una clase específica a la etiqueta footer
     document.body.appendChild(footer);// Agrega el footer al final del body
+
+    //Estilos no globales
+    const styles= document.createElement('Style');
+    styles.textContent=`
+    /*Estilo para el menú de navegación*/
+    .headersticky{
+      background: rgb(255, 255, 255);
+      border-bottom: 2px solid transparent;
+      position: fixed;
+      width: 100%;
+      z-index: 2;
+    }
+    @media screen and (min-width: 1080px){
+      .header{
+        margin: 0 auto;
+        max-width: 988px;
+        padding: 0;
+      }
+    }
+    .header {
+      align-items: center;
+      display: flex;
+      height: 70px;
+      justify-content: center;
+      padding: 0 15px;
+      justify-content: space-between;
+    }
+    .duoLogo{
+      height: 38px;
+      width: 161px;
+    }
+    .btnHeader{
+      color: rgb(175, 175, 175);
+      font-weight: bold;
+      align-items: center;
+      display: flex;
+      white-space: nowrap;
+      text-transform: uppercase;
+      background: none;
+      border: none;
+      cursor: pointer;
+      user-select: none;
+      padding: 0;
+      transition: filter .2s;
+      font-size: 13.5px;
+      letter-spacing: .8px;
+    }
+    .caracterHeader{
+      height: 14px;
+      margin-left: 8px;
+      width: 14px;
+    }
+    /*Estilo del Seguimiento del navbar en la página con el atributo sticky*/
+    #stickyContent{
+      padding: 16px;
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      border-bottom: 0 solid transparent; /* Añadir esta línea */
+      transition: border-bottom 0.25s ease-in-out; /* Añadir esta línea */
+      z-index: 100;
+    }
+    .sticky.active {
+      border-bottom: 2px solid #E5E5E5; /* Añadir esta línea */
+    }
+    /*Estilo para el botón oculto en el navbar*/
+    /*clase para el btnEmpAhora*/
+    .hideBtn {/*clase que Oculta un elemento de tipo botón*/
+      display: none;
+    }
+    .btnEmpAhora{
+      padding: 9px;/*Contenedor del botón*/
+      width: 142px;/*Ancho del boton de forma independiente por la etiqueta <a>*/
+      color: #ffffff;/*Color del texto del botón*/
+      background-color: #58CC02;/*Color de fondo del botón*/
+      border-radius: 12px;/*Genera Borde redondo*/
+      border-bottom: 4px solid #58A700; /*Propiedad de atajo para bordes inferiores */
+      border-top: 2px solid #58CC02;/*Propiedad de atajo para bordes superior */
+      border-right: 2px solid #58CC02;/*Propiedad de atajo para bordes derecho*/
+      border-left: 2px #58CC02;/*Propiedad de atajo para bordes izquierdo*/
+      font-weight: bold;/*Textto en negritas*/
+      font-size: 15px;/*Tamaño del texto*/
+      cursor: pointer;/*Cambia el Puntero del mouse*/
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .btnEmpAhora:hover{
+      background-color: #61E002;/*Color de fondo del botón*/
+      border-top: 2px solid #61E002;/*Propiedad de atajo para bordes superior */
+    }
+    .btnEmpAhora:active{
+      padding: 7px;
+      background-color: #61E002;
+      border-bottom: 2px solid #58CC02;
+      border-right: 2px solid #61E002;
+      width: 146px;
+      margin-top: 3px;
+    }
+    /*Fin del menú de navegación */
+
+    /*Estilos para el elemento del contenedor containerHome de la página principal*/
+    .container{
+      box-sizing: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 88vh;
+      max-width: 98%;
+      padding: 48px 0px;
+      overflow: hidden;
+      position: relative;
+    }
+    .containerElements{/*clase del Contenedor de elementos*/
+      align-items: end;
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      gap: 80px;
+      margin-top: -130px;
+      position: absolute;
+    }
+    .contentIMG{/*Contenido de la imagen*/
+      user-select: none;
+      max-width: 100vh;
+      margin-top: 50px;
+      margin-left: -50px;
+    }
+    .containerCenter{/*Clase para centrar el título del h1*/
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin-left: -3vw;
+    }
+    .containerButtons{/*Clase contenedor de los botones*/
+      display: flex;
+      line-height: normal;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 330px;
+      width: 100%;
+      margin-top: 15px;
+    }
+    .textButtonContainerHome{/*Clase para el texto dentro del botón de la página principal*/
+      margin-top: -5px;/*Desplaza el texto hacia la parte superior*/
+    }
+    .btn1{
+      padding: 15px;/*Contenedor del botón*/
+      width: 327px;/*Ancho del boton de forma independiente por la etiqueta <a>*/
+      color: #ffffff;/*Color del texto del botón*/
+      background-color: #58CC02;/*Color de fondo del botón*/
+      border-radius: 14px;/*Genera Borde redondo*/
+      border-bottom: 4px solid #58A700; /*Propiedad de atajo para bordes inferiores */
+      border-top: 2px solid #58CC02;/*Propiedad de atajo para bordes superior */
+      border-right: 2px solid #58CC02;/*Propiedad de atajo para bordes derecho*/
+      border-left: 2px #58CC02;/*Propiedad de atajo para bordes izquierdo*/
+      font-weight: bold;/*Textto en negritas*/
+      font-size: 15px;/*Tamaño del texto*/
+      cursor: pointer;/*Cambia el Puntero del mouse*/
+    }
+    .btn1:hover{
+      background-color: #61E002;/*Color de fondo del botón*/
+      border-top: 2px solid #61E002;/*Propiedad de atajo para bordes superior */
+    }
+    .btn1:active{
+      margin-top: 3px;
+      padding: 14.5px;/*Contenedor del botón*/
+      background-color: #61E002;
+      border-bottom: 2px solid #58CC02; /*Propiedad de atajo para bordes inferiores */
+    }
+    .btn2{
+      margin-top: -15px;/*Desplaza hacia abajo el botón*/
+      padding: 16px;/*Contenedor del botón*/
+      color: #1EB1F6;/*Color del texto del botón*/
+      background-color: #ffffff;/*Color de fondo del botón*/
+      border-radius: 14px;/*Genera Borde redondo*/
+      border-bottom: 4px solid #E5E5E5;/*Propiedad de atajo para bordes inferiores*/
+      border-top: 2px solid #E5E5E5;/*Propiedad de atajo para bordes superior*/
+      border-right: 2px solid #E5E5E5;/*Propiedad de atajo para bordes derecho*/
+      border-left: 2px solid #E5E5E5;/*Propiedad de atajo para bordes izquierdo*/
+      font-weight: bold;/*Texto en negritas*/
+      font-size: 15px;/*Tamaño del texto*/
+      cursor: pointer;/*Cambia el Puntero del mouse*/
+    }
+    .btn2:hover{
+      background-color: #E5E5E5;
+      border-color: #CECECE;
+    }
+    .btn2:active{
+      margin-top: -10px;
+      padding: 13.5px;/*Contenedor del botón*/
+      background-color: #E5E5E5;
+    }
+    .btn2:focus:not(:hover) {/*Esta clase hace que el botón recupere el hover cuando este pierde el foco*/
+      background-color: #ffffff;
+    }
+    /*Fin del menú de containerHome */
+
+    /*Clase para el carrusel de banderas*/
+    .containerFlag{
+      align-items: center;
+      border-bottom: 2px solid #E5E5E5;
+      border-top: 2px solid #E5E5E5;
+      display: flex;
+      height: 75px;
+      justify-content: center;
+      padding: 0 40px;
+      position: relative;
+    }
+    .containerCarouselFlags{
+      max-width: 1036px;
+      grid-gap: 20px;
+      align-items: center;
+      display: grid;
+      grid-template-columns: min-content 1fr min-content;
+      margin: auto;
+      overflow-x: auto;
+    }
+    .directionArrow{
+      color: rgb(175,175,175,1,);
+      cursor: pointer;
+      height: 22px;
+      opacity: .5;
+      width: 14px, 22px;
+      user-select: none;
+    }
+    .carouselFlags{
+      overflow: hidden;
+    }
+    .lineFlags{
+      display: flex;
+      gap: 20px;
+      transition: transform .5s ease-in-out;
+    }
+    /*Clase para el contenido de las banderas*/
+    .Flag{
+      align-items: center;
+      color: rgb(119, 119, 119, 1);
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+    }
+    .svgFlag{
+      margin-right: 10px;
+    }
+    .textFlag{
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    /*Fin Clase para el carrusel de banderas*/
+
+    /*Estilos para el elemento del contenedor footer*/
+    .containerFooter{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: minmax(0, 216px);
+        margin: 0 auto;
+        max-width: 375px;
+        overflow-wrap: anywhere;
+        padding: 96px 32px 64px;
+    }
+    .containerFooter ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .containerFooter a{
+        color: rgb(165,237,110);
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    .contentFooter{
+        align-content: start;
+        display: grid;
+        gap: 32px;
+    }
+    .categoryFooter{
+        color: rgb(215,255,184);
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 12px;
+    }
+    .separatorLine{
+        border-top: 2px solid rgb(165,237,110);
+        margin: 0;
+    }
+    .subContentFooter{
+        margin: 0 auto;
+    }
+    .textSubFooter{
+        color: rgb(215,255,184);
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 22px;
+        margin-bottom: 16px;
+    }
+    .subNavFooter{
+        margin: -8px -12px;
+    }
+    .subNavFooter {
+        margin: -8px -12px;
+    }
+    .textNavFooter{
+        display: inline-block;
+        margin: 8px 12px;
+    }
+    /*Estilos para el footer responsivo*/
+    @media screen and (min-width: 1080px){/*clase responsiva del footer*/
+        .containerFooter{
+            gap: 24px;
+            grid-template-columns: repeat(5, 178px);
+            max-width: 988px;
+            padding: 96px 0 64px;
+        }
+        .subContentFooter{
+            max-width: 988px;
+            padding: 40px 0 64px;
+        }
+        .subContentFooter a{
+            color: rgb(165,237,110);
+            font-size: 11.8px;
+            font-weight: 700;
+            line-height: 22px;
+        }
+    }
+    /*FIN de Estilos para el elemento del contenedor footer*/
+    `;
+    document.head.appendChild(styles)
 });
