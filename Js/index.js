@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                         </a>
                         <a class="btnMarket" href="#enlace">
                             <span>
-                                <img src="../images/Play_store.png" width="125px" height="40px">
+                                <img src="../images/Play_store.png" width="140px" height="32px">
                             </span>
                         </a>
                     </div>
@@ -275,7 +275,19 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
             </div>
         </section>
     </div>
-    <section></section>
+    <section class="fontSuperDuo">
+        <div class="containerSuperDuolingo">
+            <div class="contentDuo">
+                <img src="../images/Duo6.gif" class="imgSuperDuo">
+            </div>
+            <div class="containerbtnSuperDuo">
+                <img class="" alt="Super Duolingo" src="../images/superText.png">
+                <button class="">
+                    <span class="textSuperD">Prueba 2 semanas gratis</span>
+                </button>
+            </div>
+        </div>
+    </section>
     <section></section>
     <section></section>`;
     document.body.appendChild(main);
