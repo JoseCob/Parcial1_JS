@@ -1,6 +1,5 @@
 //Agrega un event listener al documento para que se ejecute el código una vez que el DOM esté cargado y listo para interactuar
 document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la página
-
     //Se crea el apartado del "<head>" de nuestro HTML
         //Añade el archivo CSS stylesPrimal
         const stylesPrimal = document.createElement('link');//Crea un nuevo elemento link para enlazar el archivo CSS
@@ -9,13 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
         stylesPrimal.href = '../Css/stylesPrimal.css';//Establece el atributo href del elemento link con la ruta al archivo CSS para la página 
         const headCSS1 = document.querySelector('head');//Selecciona el elemento head del documento HTML
         headCSS1.appendChild(stylesPrimal);//Agrega el elemento link al elemento head
-        //Añade el archivo CSS navBar
-        const stylesNavBar = document.createElement('link');//Crea un nuevo elemento link para enlazar el archivo CSS
-        stylesNavBar.rel = 'stylesheet';//Establece el atributo rel del elemento link como "stylesheet" para indicar que se trata de un archivo de estilos
-        stylesNavBar.type = 'text/css';//Establece el atributo type del elemento link como "text/css" para indicar que el archivo contiene hojas de estilo en cascada
-        stylesNavBar.href = '../Css/navBar.css';//Establece el atributo href del elemento link con la ruta al archivo CSS para la página 
-        const headCSS2 = document.querySelector('head');//Selecciona el elemento head del documento HTML
-        headCSS2.appendChild(stylesNavBar);//Agrega el elemento link al elemento head
         //Añade el archivo CSS main
         const stylesMain = document.createElement('link');
         stylesMain.rel = 'stylesheet';
@@ -23,13 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
         stylesMain.href = '../Css/main.css';
         const headCSS3 = document.querySelector('head');
         headCSS3.appendChild(stylesMain);
-        //Añade el archivo CSS footer
-        const stylesFooter = document.createElement('link');
-        stylesFooter.rel = 'stylesheet';
-        stylesFooter.type = 'text/css';
-        stylesFooter.href = '../Css/footer.css';
-        const headCSS4 = document.querySelector('head');
-        headCSS4.appendChild(stylesFooter);
 
         //Se crea el favicon del sitio
         const linkFavicon = document.createElement('link'); //Crea un nuevo elemento link para enlazar el favicon
@@ -286,7 +271,52 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
             </div>
         </div>
     </section>
-    <section><!--Cuarta sección--></section>`;
+    <section><!--Cuarta sección-->
+        <section>
+            <div>
+                <h2 class="">
+                    <span>
+                        <span>duolingo english&nbsp;test</span>
+                    </span>
+                </h2>
+                <p class="">
+                    Nuestro examen de inglés es conveniente, rápido y económico. El Duolingo English Test integra los últimos avances en 
+                    la ciencia e inteligencia artificial para dar a todas las personas la posibilidad de elegir dónde y cuándo hacer el 
+                    examen y que puedan dar lo mejor de sí. 
+                </p>
+                <a class="" href="#enlace">
+                    <span class="">Certifica tu inglés</span>
+                </a>
+            </div>
+            <div><img alt="gifDuo7" src="../images/Duo7.gif"></div>
+        </section>
+        <section>
+            <div>
+                <h2 class="">
+                    <span>
+                        <span>duolingo for schools</span>
+                    </span>
+                </h2>
+                <p class="">
+                    Maestras y maestros: ¡estamos para ayudarlos! Nuestra herramienta gratuita ayuda a tus estudiantes a aprender 
+                    idiomas a través de la app de Duolingo, tanto dentro como fuera del salón de clases.
+                </p>
+                <a class="" href="#enlace">
+                    <span class="">Potencia tu salón de clases</span>
+                </a>
+            </div>
+            <div><img alt="gifDuo8" src="../images/Duo8.gif"></div>
+        </section>
+        <section>
+            <div></div>
+            <div></div>
+        </section>
+        <section>
+            <div></div>
+            <div></div>
+        </section>
+    </section>
+    <section><!--Quinta sección--></section>`;
     document.body.appendChild(main);
 
     //Se crea el contenedor footer de la pagina
@@ -736,5 +766,5 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     }
     /*FIN de Estilos para el elemento del contenedor footer*/
     `;
-    document.head.appendChild(styles)
+    document.head.appendChild(styles)//Se añade los estilos al head de la página
 });
