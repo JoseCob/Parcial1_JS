@@ -288,8 +288,79 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
             </div>
         </div>
     </section>
-    <section></section>
-    <section></section>`;
+    <section class="theContainerotherElements">
+        <section class="leftDirectionContentrOther">
+            <div class="textContainerLeftDirection">
+                <h2 class="textTitleLeftDirection">
+                    <span>duolingo english test</span>
+                </h2>
+                <p class="contentSubTextLeft">
+                    Nuestro examen de inglés es conveniente, rápido y económico. El Duolingo English Test integra los 
+                    últimos avances en la ciencia e inteligencia artificial para dar a todas las personas la posibilidad 
+                    de elegir dónde y cuándo hacer el examen y que puedan dar lo mejor de sí. 
+                </p>
+                <a class="thebtncontentOtherElements" href="#enlace">
+                    <span class="theTextOtherElements">Certifica tu inglés</span>
+                </a>
+            </div>
+            <div class="imgContentLeftDirection">
+                <img class="imgLeftDirection" alt="Duo7" src="../images/Duo7.gif">
+            </div>
+        </section>
+        <section class="otherContentElements2 leftDirectionContentrOther">
+            <div class="textContainerLeftDirection">
+                <h2 class="textTitleLeftDirection">
+                    <span>duolingo for schools</span>
+                </h2>
+                <p class="contentSubTextLeft">
+                    Maestras y maestros: ¡estamos para ayudarlos! Nuestra herramienta gratuita ayuda a tus estudiantes 
+                    a aprender idiomas a través de la app de Duolingo, tanto dentro como fuera del salón de clases.
+                </p>
+                <a class="thebtncontentOtherElements" href="#enlace">
+                    <span class="theTextOtherElements">Potencia tu salón de clases</span>
+                </a>
+            </div>
+            <div class="imgContentLeftDirection">
+                <img class="imgLeftDirection" alt="gifDuo8" src="../images/Duo8.gif">
+            </div>
+        </section>
+        <section class="leftDirectionContentrOther">
+            <div class="textContainerLeftDirection">
+                <h2 class="textTitleLeftDirection">
+                    <span>duolingo abc</span>
+                </h2>
+                <p class="contentSubTextLeft">
+                    ¡Desde aprender idiomas hasta alfabetismo! Con lecciones de fonética y cuentos divertidos, 
+                    Duolingo ABC enseña a niños y niñas de entre 3 y 8 años a leer y escribir… ¡y es totalmente 
+                    gratis!
+                </p>
+                <a class="thebtncontentOtherElements" href="#enlace">
+                    <span class="theTextOtherElements">Conoce Duolingo ABC</span>
+                </a>
+            </div>
+            <div class="imgContentLeftDirection">
+                <img class="imgLeftDirection2" alt="Duo9" src="../images/Duo9.gif">
+            </div>
+        </section>
+        <section class="otherContentElements2 leftDirectionContentrOther">
+            <div class="textContainerLeftDirection">
+                <h2 class="textTitleLeftDirection">
+                    <span>duolingo math</span>
+                </h2>
+                <p class="contentSubTextLeft">
+                    ¡Prueba nuestras lecciones cortas y gratis para matemáticas! Con Duolingo Math, los estudiantes podrán 
+                    adelantarse en sus clases de matemáticas y los adultos podrán practicar para mejorar su destreza 
+                    matemática.
+                </p>
+                <a class="thebtncontentOtherElements" href="#enlace">
+                    <span class="theTextOtherElements">Mejora en matemática</span>
+                </a>
+            </div>
+            <div class="imgContentLeftDirection">
+                <img class="imgLeftDirection3" alt="gifDuo10" src="../images/Duo10.gif">
+            </div>
+        </section>
+    </section>`;
     document.body.appendChild(main);
 
     //Se crea el contenedor footer de la pagina

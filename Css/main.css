@@ -55,6 +55,18 @@
     margin-left: 20%;
     width: 35%;
 }
+.imgLeftDirection2{
+    height: 80%;
+    position: absolute;
+    margin-left: 20%;
+    width: 60%;
+}
+.imgLeftDirection3{
+    height: 80%;
+    position: absolute;
+    margin-left: 50%;
+    width: 75%;
+}
 .imgRightDirection{
     height: 80%;
     position: absolute;
@@ -131,7 +143,58 @@
 .duoOfice{
     margin-top:-45%;
 }
+/*Clase para Super Duolingo*/
 
+/*Clase para el theContainerotherElements*/
+.theContainerotherElements{
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    padding: 96px 0;
+}
+.thebtncontentOtherElements{
+    padding: 14px;/*Contenedor del botón*/
+    max-width: 300px;
+    width: 100%;
+    color: rgb(28, 176, 246);
+    background-color: #ffffff;/*Color de fondo del botón*/
+    border-radius: 14px;/*Genera Borde redondo*/
+    border-bottom: 4px solid #E5E5E5;/*Propiedad de atajo para bordes inferiores*/
+    border-top: 2px solid #E5E5E5;/*Propiedad de atajo para bordes superior*/
+    border-right: 2px solid #E5E5E5;/*Propiedad de atajo para bordes derecho*/
+    border-left: 2px solid #E5E5E5;/*Propiedad de atajo para bordes izquierdo*/
+    font-weight: bold;/*Texto en negritas*/
+    text-align: center;
+    font-family: "Arial Black";
+    font-size: 13.5px;/*Tamaño del texto*/
+    cursor: pointer;/*Cambia el Puntero del mouse*/
+}
+.thebtncontentOtherElements:hover{
+    background-color: #E5E5E5;
+    border-color: #CECECE;
+}
+.thebtncontentOtherElements:active{
+    background-color: #E5E5E5;
+    user-select: none;
+    padding-top: 12px;
+    margin-top: 2px;
+}
+.thebtncontentOtherElements:focus(:hover){
+    background-color: #ffffff;
+    border-bottom: 4px solid #E5E5E5;/*Propiedad de atajo para bordes inferiores*/
+    border-top: 2px solid #E5E5E5;/*Propiedad de atajo para bordes superior*/
+    border-right: 2px solid #E5E5E5;/*Propiedad de atajo para bordes derecho*/
+    border-left: 2px solid #E5E5E5;/*Propiedad de atajo para bordes izquierdo*/
+}
+.theTextOtherElements{
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.8px;
+}
 /*clase responsiva del main en este orden*/
 @media screen and (min-width:768px){
     .leftDirectionContentrOther{
@@ -150,6 +213,12 @@
     }
     .imgLeftDirection{
         margin-left: 32.5%;
+    }
+    .imgLeftDirection2{
+        margin-left: 22%;
+    }
+    .imgLeftDirection3{
+        margin-left: 0%;
     }
     .contentMarket{
         padding: 140px 0 0;
@@ -197,5 +266,12 @@
     }
     .titleMarket{
         font-size: 64px;
+    }
+    .theContainerotherElements{
+        gap: 0;
+        overflow: hidden;
+    }
+    .thebtncontentOtherElements{
+        margin: 0;
     }
 }
