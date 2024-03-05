@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
     addEventListener("scroll", function() {
         let btnEmpAhora = document.querySelector('.btnHeader');//Se selecciona el estilo de la class=".btnHeader"
         let getbtnElementHD = document.getElementById('getBtnHidden');//Se obtiene el elemento id="getBtnHidden"
-    
+        let navbarSticky = document.getElementById('sticky');
+
         /* Logica relacionada con el sticky del headDuolingo de la página + scroll */
         const rect = getbtnElementHD.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom >= 0) {//Obtiene la parte superior e inferior del botón
@@ -250,7 +251,6 @@ document.addEventListener('DOMContentLoaded', function() {//Se crea el DOM de la
                 </div>
             </section>
         </section>
-        <div id="hiddenNavbarMarket"></div><!--Oculta el navbar en esta sección-->
         <section class="containeroMarket">
             <div class="contentMarket">
                 <div class="contentBtnMarket">
